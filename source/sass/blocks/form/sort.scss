@@ -1,0 +1,57 @@
+@import "../../global/variables";
+
+.sort-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    justify-content: right;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 220px;
+    right: 40px;
+  }
+}
+
+.sort__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+
+  @media (min-width: $tablet) {
+    margin-right: 10px;
+  }
+}
+
+.sort__select {
+  font-family: "Montserrat", "Arial", sans-serif;
+  width: 165px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 4px 30px 4px 10px;
+  border: 0;
+  background-color: transparent;
+  color: $base-primary;
+  appearance: none;
+  background-image: url("../../../img/select-arrow.svg");
+  background-position: 144px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+
+  @media (min-width: $tablet) {
+    &:hover,
+    &:focus {
+      background-color: $base-secondary;
+    }
+  }
+
+  &:active {
+    background-image: url("../../../img/select-arrow-rotate.svg");
+  }
+}

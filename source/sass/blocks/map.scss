@@ -1,0 +1,36 @@
+@import "../global/variables";
+
+.map {
+  display: flex;
+  justify-content: center;
+}
+
+.map__canvas {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 420px;
+
+  @media (min-width: $tablet) {
+    min-width: $tablet;
+    height: 480px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: $desktop;
+    height: 540px;
+  }
+}
+
+.map__canvas-image {
+  @media (min-width: $tablet) {
+    width: $tablet;
+    height: 480px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    height: 540px;
+  }
+}

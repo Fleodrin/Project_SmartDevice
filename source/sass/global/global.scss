@@ -1,0 +1,63 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+@import "variables";
+
+.page {
+  height: 100%;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: $base-white;
+  color: $base-black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  background-color: $base-primary;
+  color: $base-white;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  outline: none;
+
+  @media (min-width: $tablet) {
+    &:hover,
+    &:focus {
+      background-color: $primary-lighter;
+    }
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+    cursor: auto;
+  }
+}
+
+svg {
+  display: block;
+}

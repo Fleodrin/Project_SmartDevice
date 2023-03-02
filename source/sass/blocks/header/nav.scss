@@ -1,0 +1,25 @@
+@import "../../global/variables";
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav__toggle {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: $base-white;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

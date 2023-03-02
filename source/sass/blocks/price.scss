@@ -1,0 +1,34 @@
+@import "../global/variables";
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop) {
+    justify-content: left;
+  }
+}
+
+.price-old {
+  color: $base-primary;
+  text-decoration: line-through;
+  font-size: 16px;
+  line-height: 32px;
+  margin-right: 6px;
+}
+
+.price-new {
+  font-size: 20px;
+  line-height: 32px;
+  margin-right: 20px;
+}
+
+.price-button {
+  padding: 8px 20px;
+  height: 40px;
+  min-width: 113px;
+  font-size: 16px;
+  line-height: 24px;
+}

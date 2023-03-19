@@ -11,6 +11,12 @@
   padding: 0;
   list-style-type: none;
   grid-template-columns: repeat(2, 225px);
+
+  @media(max-width: 770px) {
+    gap: 20px;
+    margin: 0;
+    grid-template-columns: repeat(2, 40px);
+  }
 }
 
 .nav-list__item-link {
@@ -21,8 +27,19 @@
   font-size: 16px;
 }
 
+.nav-list__item-text {
+  @media(max-width: 770px) {
+    display: none;
+  }
+}
+
 .nav-list__icon {
   margin-right: 15px;
+
+  @media(max-width: 770px) {
+    margin: 0;
+    padding: 10px;
+  }
 }
 
 .nav-button {
@@ -34,4 +51,8 @@
   color: $base-white;
   border: none;
   box-shadow: 0 0 0 1px $base-white inset;
+
+  @media(max-width: 770px) {
+    display: none;
+  }
 }

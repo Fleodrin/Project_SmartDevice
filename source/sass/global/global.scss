@@ -1,3 +1,17 @@
+@import "variables";
+
+.page {
+  height: 100%;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: $base-blue;
+  color: $base-white;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -15,4 +29,12 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+button {
+  padding: 0;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  cursor: pointer;
 }

@@ -1,11 +1,57 @@
 <!doctype html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <title>Smart Device - умные технологии</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Document</title>
+  <link rel="preload" href="./fonts/PT-Mono.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Roboto-Condensed.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Roboto-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
-<body>
+<body class="page__body">
+
+<header class="header">
+  <div class="header-container">
+    <a class="header-container__logo header-logo" href="#">
+      <svg class="header-logo__icon" width="55" height="55">
+        <use href="img/icons/stack.svg#logo"></use>
+      </svg>
+      <div class="header-logo__title-container">
+        <span class="header-logo__title">Smart Device</span>
+        <span class="header-logo__subtitle">умные технологии</span>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <ul class="nav__list nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__item-link" href="mailto:info@sd.ru">
+            <svg class="nav-list__icon" width="20" height="20">
+              <use href="img/icons/stack.svg#email"></use>
+            </svg>
+            <span class="nav-list__item-text">info@sd.ru</span>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__item-link" href="tel:+74950005252">
+            <svg class="nav-list__icon" width="20" height="20">
+              <use href="img/icons/stack.svg#phone-call"></use>
+            </svg>
+            <span class="nav-list__item-text">+7 (495) 000 52 52</span>
+          </a>
+        </li>
+      </ul>
+
+      <button class="nav-button" type="button">Заказать звонок</button>
+    </nav>
+  </div>
+</header>
 
 </body>
 </html>

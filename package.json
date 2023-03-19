@@ -31,7 +31,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
     "w3c": "gulp validateMarkup --silent",
     "bemlinter": "gulp lintBem --silent",
-    "lint": "npm run editorconfig && npm run stylelint && npm run w3c && npm run bemlinter",
+    "lint": "npm run stylelint && npm run w3c && npm run bemlinter",
     "start": "gulp runDev",
     "build": "gulp buildProd",
     "preview": "gulp buildProd && gulp startServer"

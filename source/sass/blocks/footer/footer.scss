@@ -3,7 +3,6 @@
 .footer {
   box-sizing: border-box;
   min-height: 280px;
-  padding: 50px 0;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
 
@@ -11,7 +10,19 @@
   box-sizing: border-box;
   display: flex;
   width: 1220px;
+  padding: 50px 0;
   margin: auto;
+
+  @media (max-width: $tablet) {
+    width: 770px;
+    padding: 50px 50px 65px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile) {
+    width: 320px;
+    padding: 35px 0;
+  }
 }
 
 .footer-logo {
@@ -19,6 +30,14 @@
   margin-right: 160px;
   margin-bottom: 30px;
   text-decoration: none;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 55px 15px 50px;
+  }
 }
 
 .footer-logo__icon {
@@ -47,6 +66,16 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+.footer-section {
+  @media (max-width: $mobile) {
+    box-sizing: border-box;
+    padding: 20px 75px 5px 25px;
+    background-image: url("/img/cross.svg");
+    background-repeat: no-repeat;
+    background-position: 279px;
+  }
+}
+
 .footer-section__title {
   margin: 5px 0 20px;
   font-size: 15px;
@@ -56,4 +85,41 @@
   color: $additional-white;
   font-weight: 400;
   letter-spacing: 0.05em;
+
+  @media (max-width: $mobile) {
+    margin: 0 0 15px;
+  }
+}
+
+.footer-container-social {
+  @media (max-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+  }
+}
+
+.footer-container-contacts {
+  @media (max-width: $mobile) {
+    width: 100%;
+    padding-right: 25px;
+    border-bottom: 1px solid $footer-lines;
+  }
+}
+
+.footer-container-links {
+  @media (max-width: $tablet) {
+    margin-right: 130px;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid $footer-lines;
+    border-top: 1px solid $footer-lines;
+  }
 }

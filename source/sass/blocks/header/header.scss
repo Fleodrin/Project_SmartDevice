@@ -47,11 +47,11 @@
 
   @media (max-width: $tablet) {
     margin-top: 0;
-    width: 35px;
-    height: 35px;
   }
 
   @media (max-width: $mobile) {
+    width: 35px;
+    height: 35px;
     margin: 5px 0 0;
   }
 }

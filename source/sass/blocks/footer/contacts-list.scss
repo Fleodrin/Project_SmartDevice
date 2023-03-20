@@ -5,6 +5,14 @@
   flex-direction: column;
   gap: 10px;
   font-style: normal;
+
+  @media (max-width: $tablet) {
+    width: 320px;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .footer__contacts-list-item {
@@ -17,5 +25,5 @@
   color: $secondary-white;
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
 }

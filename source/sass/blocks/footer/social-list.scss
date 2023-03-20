@@ -6,6 +6,14 @@
   padding: 0;
   list-style-type: none;
   gap: 15px;
+
+  @media (max-width: $tablet) {
+    margin-top: 5px;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 83px 25px 87px;
+  }
 }
 
 .footer__social-list-link {

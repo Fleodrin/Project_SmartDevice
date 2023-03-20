@@ -1,0 +1,21 @@
+@import "../../global/variables";
+
+.footer__contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-style: normal;
+}
+
+.footer__contacts-list-item {
+  margin: 0;
+}
+
+.footer__contacts-list-link {
+  display: block;
+  text-decoration: none;
+  color: $secondary-white;
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  line-height: 22px;
+}

@@ -22,6 +22,8 @@
 
   @media (max-width: $mobile) {
     min-height: 560px;
+    background-image: url("/img/main-background-mobile.jpg");
+    background-position-x: -225px;
   }
 }
 

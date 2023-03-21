@@ -3,7 +3,14 @@
 .footer {
   box-sizing: border-box;
   min-height: 280px;
-  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  @media (max-width: $tablet) {
+    min-height: 465px;
+  }
+
+  @media (max-width: $mobile) {
+    min-height: 280px;
+  }
 }
 
 .footer-container {

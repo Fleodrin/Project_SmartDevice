@@ -47,9 +47,12 @@
   height: 40px;
   padding: 10px 15px;
   margin-top: 35px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
   background-color: transparent;
   color: $base-white;
-  border: none;
   box-shadow: 0 0 0 1px $base-white inset;
 
   @media (max-width: $tablet) {

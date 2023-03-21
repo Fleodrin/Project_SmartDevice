@@ -1,0 +1,136 @@
+@import "../../global/variables";
+
+.main {
+  position: relative;
+  min-height: 880px;
+  background-image: url("/img/main-background.jpg");
+  background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  }
+
+  @media (max-width: $tablet) {
+    min-height: 640px;
+    background-image: url("/img/main-background-tablet.jpg");
+    background-position-x: -125px;
+  }
+
+  @media (max-width: $mobile) {
+    min-height: 560px;
+  }
+}
+
+.main-container {
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  width: 1220px;
+  margin: auto;
+  padding: 305px 125px 280px;
+
+  @media (max-width: $tablet) {
+    width: 770px;
+    padding: 180px 50px 205px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 320px;
+    padding: 150px 25px;
+  }
+}
+
+.main__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  color: $base-white;
+  margin: 0 0 40px;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet) {
+    height: 60px;
+    line-height: 75px;
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 36px;
+    line-height: 42px;
+    height: 75px;
+  }
+}
+
+.main__subtitle {
+  max-width: 685px;
+  min-height: 70px;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  line-height: 34px;
+  font-size: 22px;
+  color: $base-white;
+  margin: 0 0 40px;
+
+  @media (max-width: $tablet) {
+    max-width: 670px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    line-height: 22px;
+    min-height: 35px;
+  }
+}
+
+.main__button {
+  position: relative;
+  background-color: $secondary-blue;
+  width: 410px;
+  height: 55px;
+  padding: 15px 25px;
+
+  &::after {
+    content: "Получить бесплатную консультацию";
+    position: absolute;
+    display: block;
+    top: 16px;
+    left: 25px;
+    width: 360px;
+    min-height: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: $base-white;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: 45px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 270px;
+    height: 40px;
+    padding: 10px 30px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+
+    &::after {
+      content: "бесплатная консультация";
+      font-size: 14px;
+      line-height: 16px;
+      top: 12px;
+      left: 30px;
+      width: 210px;
+    }
+  }
+}

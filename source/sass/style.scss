@@ -4,8 +4,12 @@
 @import "global/variables";
 
 //Blocks
+//Header
 @import "blocks/header/header";
 @import "blocks/header/nav";
+//Main
+@import "blocks/main/main";
+//Footer
 @import "blocks/footer/footer";
 @import "blocks/footer/social-list";
 @import "blocks/footer/links-list";

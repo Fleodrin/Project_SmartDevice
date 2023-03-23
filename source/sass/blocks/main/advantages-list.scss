@@ -1,0 +1,77 @@
+@import "../../global/variables";
+
+.advantages-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 120px 0 120px;
+  background-color: $background-white;
+}
+
+.advantages-list__item {
+  position: relative;
+  box-sizing: border-box;
+  width: 595px;
+  min-height: 300px;
+  padding: 94px 44px 34px 40px;
+  border: 1px solid $border-white;
+  border-left: 5px solid $secondary-blue;
+
+  &--primary {
+    background-color: $secondary-blue;
+    border-color: $secondary-blue;
+  }
+}
+
+.advantages-list__item-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &--stopwatch {
+    top: 39px;
+    left: 40px;
+  }
+
+  &--hired {
+    top: 39px;
+    left: 41px;
+  }
+
+  &--detective {
+    top: 39px;
+    left: 35px;
+  }
+
+  &--tag {
+    top: 39px;
+    left: 40px;
+  }
+}
+
+.advantages-list__item-title {
+  color: $secondary-blue;
+  margin: 0 0 15px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+.advantages-list__item--primary .advantages-list__item-title {
+  color: $base-white;
+}
+
+.advantages-list__item-description {
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  line-height: 135%;
+  color: $base-blue;
+}
+
+.advantages-list__item--primary .advantages-list__item-description {
+  color: $base-white;;
+}

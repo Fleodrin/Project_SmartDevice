@@ -3,6 +3,10 @@
 .about {
   background-color: $background-white;
   padding-bottom: 100px;
+
+  @media (max-width: $tablet) {
+    padding-bottom: 80px;
+  }
 }
 
 .about-container {
@@ -14,6 +18,20 @@
   background-image: url("/img/2022.png");
   background-repeat: no-repeat;
   background-position: left;
+
+  @media (max-width: $tablet) {
+    width: 670px;
+    min-height: 380px;
+    padding: 0 0 0 175px;
+    background-position: top left;
+  }
+
+  @media (max-width: $mobile) {
+    width: 320px;
+    min-height: 305px;
+    padding: 0 25px 0;
+    background: none;
+  }
 }
 
 .about-title {
@@ -24,6 +42,12 @@
   height: 45px;
   font-weight: 400;
   margin: 0 0 15px;
+
+  @media (max-width: $mobile) {
+    font-size: 28px;
+    line-height: 39px;
+    height: 35px;
+  }
 }
 
 .about-description-container {
@@ -37,6 +61,18 @@
   line-height: 120%;
   color: $base-blue;
   margin: 0 0 20px;
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+}
+
+.about-description__mobile {
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .about-button {
@@ -49,5 +85,11 @@
   color: $secondary-blue;
   background-color: $background-white;
   border: 1px solid $secondary-blue;
+
+  @media (max-width: $mobile) {
+    width: 160px;
+    height: 35px;
+    padding: 8px 15px;
+  }
 }
 

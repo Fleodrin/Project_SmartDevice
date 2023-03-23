@@ -9,6 +9,17 @@
   margin: 0;
   padding: 120px 0 120px;
   background-color: $background-white;
+
+  @media (max-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    padding: 80px 50px 80px;
+  }
+
+  @media (max-width: $mobile) {
+    display: flex;
+    padding: 50px 25px;
+  }
 }
 
 .advantages-list__item {
@@ -16,13 +27,26 @@
   box-sizing: border-box;
   width: 595px;
   min-height: 300px;
-  padding: 94px 44px 34px 40px;
+  padding: 94px 44px 34px 45px;
   border: 1px solid $border-white;
-  border-left: 5px solid $secondary-blue;
+  border-left: none;
+  box-shadow: inset 5px 0 $secondary-blue;
 
   &--primary {
     background-color: $secondary-blue;
     border-color: $secondary-blue;
+  }
+
+  @media (max-width: $tablet) {
+    width: 320px;
+    min-height: 360px;
+    padding: 94px 29px 34px 45px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 270px;
+    min-height: 340px;
+    padding: 79px 29px 34px 30px;
   }
 }
 
@@ -50,6 +74,18 @@
     top: 39px;
     left: 40px;
   }
+
+  @media (max-width: $mobile) {
+    &--stopwatch,
+    &--hired,
+    &--detective,
+    &--tag {
+      top: 30px;
+      left: 30px;
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
 
 .advantages-list__item-title {
@@ -59,6 +95,15 @@
   font-weight: 400;
   line-height: 35px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  @media (max-width: $tablet) {
+    line-height: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .advantages-list__item--primary .advantages-list__item-title {
@@ -68,8 +113,19 @@
 .advantages-list__item-description {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 135%;
+  line-height: 21px;
   color: $base-blue;
+  margin: 0;
+
+  @media (max-width: $tablet) {
+    width: 245px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 210px;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .advantages-list__item--primary .advantages-list__item-description {

@@ -39,11 +39,7 @@ export function processStyles() {
   return gulp.src('source/sass/*.scss', {sourcemaps: isDevelopment})
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([
-      postUrl({assetsPath: '../'}),
-      autoprefixer(),
-      csso()
-    ]))
+    .pipe(postcss([postUrl({assetsPath: '../'}), autoprefixer(), csso()]))
     .pipe(gulp.dest('build/css', {sourcemaps: isDevelopment}))
     .pipe(browser.stream());
 }
@@ -83,12 +79,7 @@ export function createStack() {
 }
 
 export function copyAssets() {
-  return gulp.src([
-    'source/fonts/**/*.{woff2,woff}',
-    'source/*.ico',
-    'source/*.webmanifest',
-    'source/vendor/**'
-  ], {
+  return gulp.src(['source/fonts/**/*.{woff2,woff}', 'source/*.ico', 'source/*.webmanifest', 'source/vendor/**'], {
     base: 'source'
   })
     .pipe(gulp.dest('build'));
@@ -98,10 +89,7 @@ export function startServer(done) {
   browser.init({
     server: {
       baseDir: 'build'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
+    }, cors: true, notify: false, ui: false,
   });
   done();
 }
@@ -118,16 +106,7 @@ function watchFiles() {
 }
 
 function compileProject(done) {
-  gulp.parallel(
-    processMarkup,
-    processStyles,
-    processScripts,
-    optimizeVector,
-    createStack,
-    copyAssets,
-    optimizeImages,
-    createWebp
-  )(done);
+  gulp.parallel(processMarkup, processStyles, processScripts, optimizeVector, createStack, copyAssets, optimizeImages, createWebp)(done);
 }
 
 function deleteBuild() {
@@ -136,17 +115,9 @@ function deleteBuild() {
 
 export function buildProd(done) {
   isDevelopment = false;
-  gulp.series(
-    deleteBuild,
-    compileProject
-  )(done);
+  gulp.series(deleteBuild, compileProject)(done);
 }
 
 export function runDev(done) {
-  gulp.series(
-    deleteBuild,
-    compileProject,
-    startServer,
-    watchFiles
-  )(done);
+  gulp.series(deleteBuild, compileProject, startServer, watchFiles)(done);
 }

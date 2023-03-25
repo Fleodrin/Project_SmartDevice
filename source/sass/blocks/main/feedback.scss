@@ -5,6 +5,17 @@
   padding: 170px 0;
   min-height: 840px;
   background: linear-gradient(139deg,#026693 0,#026693 33.5%,#00b2ff 33.6%);
+
+  @media (max-width: $tablet) {
+    padding: 50px 0;
+    min-height: 580px;
+    background: $secondary-blue;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 50px 25px;
+    min-height: 750px;
+  }
 }
 
 .feedback__picture {
@@ -13,6 +24,10 @@
   max-width: 510px;
   min-width: 400px;
   height: 100%;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
 }
 
 .feedback-container {
@@ -21,12 +36,29 @@
   margin: 0 auto;
   max-width: 1210px;
   min-width: 1024px;
+
+  @media (max-width: $tablet) {
+    min-width: 768px;
+    justify-content: center;
+  }
+
+  @media (max-width: $mobile) {
+    min-width: 270px;
+  }
 }
 
 .feedback__content-container {
-  min-width: 585px;
-  max-width: 585px;
+  width: 585px;
   color: $additional-white;
+
+  @media (max-width: $tablet) {
+    width: 670px;
+  }
+
+  @media (max-width: $mobile) {
+    width: auto;
+    min-width: 270px;
+  }
 }
 
 .feedback__content-container h2 {
@@ -35,6 +67,16 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   margin: 0 0 15px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
 }
 
 .feedback__content-container p {
@@ -42,4 +84,14 @@
   line-height: 20px;
   margin: 0 0 35px 5px;
   font-family: "PT Mono", monospace;
+
+  @media (max-width: $tablet) {
+    margin: 0 0 25px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+    line-height: 15px;
+    margin: 0 0 40px;
+  }
 }

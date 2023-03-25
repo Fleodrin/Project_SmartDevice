@@ -1,7 +1,7 @@
 @import "../../global/variables";
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
@@ -9,6 +9,7 @@
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 
   @media (max-width: $tablet) {
+    position: absolute;
     min-height: 100px;
   }
 
@@ -67,6 +68,7 @@
 
 .header-logo__title {
   min-width: 145px;
+  height: 25px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: bold;
   font-size: 25px;

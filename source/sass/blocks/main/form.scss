@@ -1,0 +1,100 @@
+@import "../../global/variables";
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  padding-left: 5px;
+  color: $additional-white;
+  background-color: $secondary-blue;
+}
+
+.form__field input,
+.form__textarea textarea {
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 3px;
+  border: 0;
+  background-color: rgba(4, 20, 39, 0.15);
+  color: $additional-white;
+  outline: none;
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.form__field input {
+  width: 275px;
+  height: 50px;
+  padding: 15px;
+}
+
+.form__textarea textarea {
+  width: 580px;
+  height: 155px;
+  resize: none;
+  padding: 25px 15px;
+  margin-bottom: 15px;
+}
+
+.form__button {
+  width: 265px;
+  height: 45px;
+  padding: 15px 25px;
+  margin-right: 20px;
+  font-family: "Roboto Condensed", "Arial", sans-serif ;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: $additional-white;
+  background-color: $base-blue;
+}
+
+.form__checkbox {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 15px;
+  padding-left: 26px;
+  width: 260px;
+  font-family: "PT Mono", monospace;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__checkbox,
+.form__checkbox-mark,
+.form__checkbox label {
+  cursor: pointer;
+}
+
+.form__checkbox input {
+  display: none;
+}
+
+.form__checkbox-mark {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid $additional-white;
+  left: 0;
+  top: 50%;
+  bottom: 50%;
+  margin: auto;
+}
+
+.form__checkbox input:checked ~ .form__checkbox-mark::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 7px;
+  border-bottom: 1px solid $additional-white;
+  border-right: 1px solid $additional-white;
+  transform: rotate(45deg);
+}

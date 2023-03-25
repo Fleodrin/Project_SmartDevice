@@ -92,8 +92,13 @@
   }
 }
 
-.main__button {
+.main__link {
   position: relative;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
   background-color: $secondary-blue;
   width: 410px;
   height: 55px;

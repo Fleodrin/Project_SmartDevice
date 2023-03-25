@@ -1,0 +1,45 @@
+@import "../../global/variables";
+
+.feedback {
+  box-sizing: border-box;
+  padding: 170px 0;
+  min-height: 840px;
+  background: linear-gradient(139deg,#026693 0,#026693 33.5%,#00b2ff 33.6%);
+}
+
+.feedback__picture {
+  margin-top: 76px;
+  margin-right: 35px;
+  max-width: 510px;
+  min-width: 400px;
+  height: 100%;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1210px;
+  min-width: 1024px;
+}
+
+.feedback__content-container {
+  min-width: 585px;
+  max-width: 585px;
+  color: $additional-white;
+}
+
+.feedback__content-container h2 {
+  font-size: 36px;
+  line-height: 45px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+
+.feedback__content-container p {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 35px 5px;
+  font-family: "PT Mono", monospace;
+}

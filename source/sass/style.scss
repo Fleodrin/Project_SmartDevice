@@ -1,6 +1,7 @@
 //Global
 @import "global/fonts";
 @import "global/global";
+@import "global/utils";
 @import "global/variables";
 
 //Blocks
@@ -19,3 +20,8 @@
 @import "blocks/footer/social-list";
 @import "blocks/footer/links-list";
 @import "blocks/footer/contacts-list";
+//Modal
+@import "blocks/modal/modal";
+//Vendor
+@import "vendor/normalize";
+@import "vendor/swiper";

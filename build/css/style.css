@@ -885,9 +885,6 @@ button {
   background: rgba(255, 255, 255, 0);
   border: none;
   cursor: pointer;
-  background: #2c39f2;
-  min-width: auto;
-  padding: 5px;
 }
 
 .modal__close-btn svg {
@@ -917,6 +914,176 @@ button {
 .modal iframe {
   max-width: 100%;
   border: none;
+}
+
+.modal-window__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: rgba(3, 16, 27, 0.7);
+}
+
+.modal-window__content {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 500px;
+  min-height: 610px;
+  padding: 40px;
+  margin: auto;
+  background-color: #00b2ff;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.modal-window__content h2 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0 0 15px;
+}
+
+.modal-window__content p {
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  min-height: 40px;
+  margin: 0 0 40px;
+}
+
+.modal-form__field input,
+.modal-form__textarea textarea {
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 3px;
+  border: 0;
+  background-color: rgba(4, 20, 39, 0.15);
+  color: #ffffff;
+  outline: none;
+}
+
+.modal-form__field input::-webkit-input-placeholder,
+.modal-form__textarea textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.modal-form__field input::-moz-placeholder,
+.modal-form__textarea textarea::-moz-placeholder {
+  opacity: 1;
+}
+
+.modal-form__field input:-ms-input-placeholder,
+.modal-form__textarea textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.modal-form__field input::-ms-input-placeholder,
+.modal-form__textarea textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.modal-form__field input::placeholder,
+.modal-form__textarea textarea::placeholder {
+  opacity: 1;
+}
+
+.modal-form__field input {
+  width: 420px;
+  height: 50px;
+  padding: 15px;
+  margin: 0 0 20px;
+}
+
+.modal-form__textarea textarea {
+  width: 420px;
+  height: 155px;
+  resize: none;
+  padding: 25px 15px;
+  margin: 0 0 25px;
+}
+
+.modal-form__button {
+  width: 420px;
+  height: 45px;
+  padding: 15px 60px;
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #041827;
+}
+
+.modal-form__checkbox {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 395px;
+  height: 20px;
+  font-family: "PT Mono", monospace;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 26px;
+}
+
+.modal-form__checkbox,
+.modal-form__checkbox-mark,
+.modal-form__checkbox label {
+  cursor: pointer;
+}
+
+.modal-form__checkbox input {
+  display: none;
+}
+
+.modal-form__checkbox-mark {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid #ffffff;
+  left: 0;
+  top: 50%;
+  bottom: 50%;
+  margin: auto;
+}
+
+.modal-form__checkbox input:checked ~ .modal-form__checkbox-mark::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 7px;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.modal-window__close-button {
+  position: absolute;
+  padding: 10px;
+  background-color: transparent;
+  right: 15px;
+  top: 15px;
 }
 
 /* stylelint-disable */
@@ -2412,6 +2579,10 @@ button.swiper-pagination-bullet {
 
   .footer__contacts-list {
     width: 320px;
+  }
+
+  .modal-window {
+    display: none;
   }
 }
 

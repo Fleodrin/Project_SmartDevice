@@ -574,26 +574,31 @@ button {
 
 .form__field input::-webkit-input-placeholder,
 .form__textarea textarea::-webkit-input-placeholder {
+  color: #ffffff;
   opacity: 1;
 }
 
 .form__field input::-moz-placeholder,
 .form__textarea textarea::-moz-placeholder {
+  color: #ffffff;
   opacity: 1;
 }
 
 .form__field input:-ms-input-placeholder,
 .form__textarea textarea:-ms-input-placeholder {
+  color: #ffffff;
   opacity: 1;
 }
 
 .form__field input::-ms-input-placeholder,
 .form__textarea textarea::-ms-input-placeholder {
+  color: #ffffff;
   opacity: 1;
 }
 
 .form__field input::placeholder,
 .form__textarea textarea::placeholder {
+  color: #ffffff;
   opacity: 1;
 }
 

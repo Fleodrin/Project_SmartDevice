@@ -373,7 +373,7 @@ button {
   min-height: 320px;
   width: 1220px;
   margin: 0 auto;
-  background-image: url("/img/2022.png");
+  background-image: url("../img/2022.png");
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -407,6 +407,7 @@ button {
   padding: 14px 12px;
   font-size: 14px;
   font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #00b2ff;
   background-color: rgb(248, 253, 255);

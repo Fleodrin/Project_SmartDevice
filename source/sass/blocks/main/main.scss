@@ -3,7 +3,7 @@
 .main {
   position: relative;
   min-height: 880px;
-  background-image: url("/img/main-background.jpg");
+  background-image: url("../img/main-background.jpg");
   background-position: center;
 
   &::before {
@@ -16,13 +16,13 @@
 
   @media (max-width: $tablet) {
     min-height: 640px;
-    background-image: url("/img/main-background-tablet.jpg");
+    background-image: url("../img/main-background-tablet.jpg");
     background-position-x: -125px;
   }
 
   @media (max-width: $mobile) {
     min-height: 560px;
-    background-image: url("/img/main-background-mobile.jpg");
+    background-image: url("../img/main-background-mobile.jpg");
     background-position-x: -225px;
   }
 }

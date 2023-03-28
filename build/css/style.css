@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "PT Mono";
-  src: url("../../fonts/PT-Mono.woff2") format("woff2"), url("../../fonts/PT-Mono.woff") format("woff");
+  src: url("../fonts/PT-Mono.woff2") format("woff2"), url("../fonts/PT-Mono.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../../fonts/Roboto-Condensed.woff2") format("woff2"), url("../../fonts/Roboto-Condensed.woff") format("woff");
+  src: url("../fonts/Roboto-Condensed.woff2") format("woff2"), url("../fonts/Roboto-Condensed.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../../fonts/Roboto-Condensed-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Condensed-Bold.woff2") format("woff");
+  src: url("../fonts/Roboto-Condensed-Bold.woff2") format("woff2"), url("../fonts/Roboto-Condensed-Bold.woff2") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/Roboto-Medium.woff2") format("woff2"), url("../../fonts/Roboto-Medium.woff") format("woff");
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -201,7 +201,7 @@ button {
 .main {
   position: relative;
   min-height: 880px;
-  background-image: url("/img/main-background.jpg");
+  background-image: url("../img/main-background.jpg");
   background-position: center;
 }
 
@@ -457,15 +457,15 @@ button {
 }
 
 .products-list__item--first {
-  background-image: url("/img/products/product-desktop-1.jpg");
+  background-image: url("../img/products/product-desktop-1.jpg");
 }
 
 .products-list__item--second {
-  background-image: url("/img/products/product-desktop-2.jpg");
+  background-image: url("../img/products/product-desktop-2.jpg");
 }
 
 .products-list__item--third {
-  background-image: url("/img/products/product-desktop-3.jpg");
+  background-image: url("../img/products/product-desktop-3.jpg");
 }
 
 .products-list__item-title {
@@ -2388,7 +2388,7 @@ button.swiper-pagination-bullet {
 
   .main {
     min-height: 640px;
-    background-image: url("/img/main-background-tablet.jpg");
+    background-image: url("../img/main-background-tablet.jpg");
     background-position-x: -125px;
   }
 
@@ -2472,15 +2472,15 @@ button.swiper-pagination-bullet {
   }
 
   .products-list__item--first {
-    background-image: url("/img/products/product-tablet-1.jpg");
+    background-image: url("../img/products/product-tablet-1.jpg");
   }
 
   .products-list__item--second {
-    background-image: url("/img/products/product-tablet-2.jpg");
+    background-image: url("../img/products/product-tablet-2.jpg");
   }
 
   .products-list__item--third {
-    background-image: url("/img/products/product-tablet-3.jpg");
+    background-image: url("../img/products/product-tablet-3.jpg");
   }
 
   .feedback {
@@ -2613,7 +2613,7 @@ button.swiper-pagination-bullet {
 
   .main {
     min-height: 560px;
-    background-image: url("/img/main-background-mobile.jpg");
+    background-image: url("../img/main-background-mobile.jpg");
     background-position-x: -225px;
   }
 
@@ -2748,15 +2748,15 @@ button.swiper-pagination-bullet {
   }
 
   .products-list__item--first {
-    background-image: url("/img/products/product-mobile-1.jpg");
+    background-image: url("../img/products/product-mobile-1.jpg");
   }
 
   .products-list__item--second {
-    background-image: url("/img/products/product-mobile-2.jpg");
+    background-image: url("../img/products/product-mobile-2.jpg");
   }
 
   .products-list__item--third {
-    background-image: url("/img/products/product-mobile-3.jpg");
+    background-image: url("../img/products/product-mobile-3.jpg");
   }
 
   .products-list__item-title {
@@ -2843,7 +2843,7 @@ button.swiper-pagination-bullet {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 20px 75px 5px 25px;
-    background-image: url("/img/cross.svg");
+    background-image: url("../img/cross.svg");
     background-repeat: no-repeat;
     background-position: 279px;
   }

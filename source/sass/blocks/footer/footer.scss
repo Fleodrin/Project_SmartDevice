@@ -76,15 +76,26 @@
 
 .footer-section {
   @media (max-width: $mobile) {
+    position: relative;
     box-sizing: border-box;
     padding: 0;
-    background-image: url("../img/cross.svg");
-    background-repeat: no-repeat;
-    background-position: 20px 20px;
-    background-position-x: right;
+
+    &::after {
+      top: 20px;
+      right: 26px;
+      pointer-events: none;
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-image: url("../img/cross.svg");
+      background-repeat: no-repeat;
+    }
 
     &.is-active {
-      background-image: url("../img/minus.svg");
+      &::after {
+        background-image: url("../img/minus.svg");
+      }
     }
 
     &.is-active .footer-section__list {

@@ -27,8 +27,9 @@
   }
 
   @media (max-width: $mobile) {
-    width: 320px;
+    width: 100%;
     padding: 35px 0;
+    justify-content: center;
   }
 }
 
@@ -76,14 +77,23 @@
 .footer-section {
   @media (max-width: $mobile) {
     box-sizing: border-box;
-    padding: 20px 75px 5px 25px;
+    padding: 0;
     background-image: url("../img/cross.svg");
     background-repeat: no-repeat;
-    background-position: 279px;
+    background-position: 20px 20px;
+    background-position-x: right;
+
+    &.is-active {
+      background-image: url("../img/minus.svg");
+    }
+
+    &.is-active .footer-section__list {
+      padding-bottom: 20px;
+    }
   }
 }
 
-.footer-section__title {
+.footer-section h2 {
   margin: 5px 0 20px;
   font-size: 15px;
   line-height: 16px;
@@ -94,7 +104,17 @@
   letter-spacing: 0.05em;
 
   @media (max-width: $mobile) {
-    margin: 0 0 15px;
+    margin: 0;
+    padding: 20px 25px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus-visible {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -107,6 +127,7 @@
 
   @media (max-width: $mobile) {
     flex-wrap: wrap;
+    width: 320px;
   }
 }
 

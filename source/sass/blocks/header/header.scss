@@ -9,7 +9,7 @@
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 
   @media (max-width: $tablet) {
-    position: absolute;
+    position: static;
     min-height: 100px;
   }
 
@@ -19,34 +19,45 @@
 }
 
 .header-container {
-  box-sizing: border-box;
+  box-sizing: content-box;
   display: flex;
-  width: 1160px;
+  justify-content: space-between;
+  max-width: 1160px;
+  padding: 0 60px;
   margin: auto;
 
   @media (max-width: $tablet) {
-    width: 770px;
+    width: 100%;
     padding: 20px 70px 0 50px;
+    box-sizing: border-box;
     justify-content: space-between;
   }
 
   @media (max-width: $mobile) {
-    width: 320px;
+    min-width: 320px;
     padding: 10px 35px 0 26px;
   }
 }
 
-.header-logo {
+.header-container > a {
   display: flex;
-  margin-right: 160px;
   text-decoration: none;
+  margin-right: 30px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tablet) {
     margin: 0;
   }
 }
 
-.header-logo__icon {
+.header__icon {
   margin-top: 30px;
   margin-right: 15px;
 
@@ -61,12 +72,12 @@
   }
 }
 
-.header-logo__title-container {
+.header__title-container {
   display: flex;
   flex-direction: column;
 }
 
-.header-logo__title {
+.header__title-container h2 {
   min-width: 145px;
   height: 25px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -84,7 +95,7 @@
   }
 }
 
-.header-logo__subtitle {
+.header__title-container span {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-size: 12px;

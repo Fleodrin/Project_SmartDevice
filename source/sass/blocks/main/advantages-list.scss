@@ -34,7 +34,7 @@
   border-left: none;
   box-shadow: inset 5px 0 $secondary-blue;
 
-  &--primary {
+  &:hover {
     background-color: $secondary-blue;
     border-color: $secondary-blue;
   }
@@ -53,28 +53,29 @@
 }
 
 .advantages-list__item-icon {
+  fill: $secondary-blue;
   position: absolute;
   top: 0;
   left: 0;
 
   &--stopwatch {
     top: 39px;
-    left: 40px;
+    left: 45px;
   }
 
   &--hired {
     top: 39px;
-    left: 41px;
+    left: 45px;
   }
 
   &--detective {
     top: 39px;
-    left: 35px;
+    left: 40px;
   }
 
   &--tag {
     top: 39px;
-    left: 40px;
+    left: 45px;
   }
 
   @media (max-width: $mobile) {
@@ -90,7 +91,7 @@
   }
 }
 
-.advantages-list__item-title {
+.advantages-list__item h3 {
   color: $secondary-blue;
   margin: 0 0 15px;
   font-size: 24px;
@@ -108,11 +109,7 @@
   }
 }
 
-.advantages-list__item--primary .advantages-list__item-title {
-  color: $base-white;
-}
-
-.advantages-list__item-description {
+.advantages-list__item p {
   font-family: "PT Mono", monospace;
   font-size: 16px;
   line-height: 21px;
@@ -131,5 +128,12 @@
 }
 
 .advantages-list__item--primary .advantages-list__item-description {
+  color: $base-white;
+}
+
+.advantages-list__item:hover .advantages-list__item-icon,
+.advantages-list__item:hover h3,
+.advantages-list__item:hover p {
+  fill: $base-white;
   color: $base-white;
 }

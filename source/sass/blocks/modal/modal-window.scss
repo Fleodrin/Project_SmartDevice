@@ -41,7 +41,7 @@
   font-size: 16px;
   line-height: 22px;
   min-height: 40px;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 }
 
 .modal-form__field input,
@@ -58,6 +58,12 @@
 
   &::placeholder {
     opacity: 1;
+    color: $additional-white;
+  }
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0 0 0 2px $base-blue;
   }
 }
 
@@ -65,7 +71,7 @@
   width: 420px;
   height: 50px;
   padding: 15px;
-  margin: 0 0 20px;
+  margin: 20px 0 0;
 }
 
 .modal-form__textarea textarea {
@@ -73,14 +79,14 @@
   height: 155px;
   resize: none;
   padding: 25px 15px;
-  margin: 0 0 25px;
+  margin: 20px 0 0;
 }
 
 .modal-form__button {
   width: 420px;
   height: 45px;
   padding: 15px 60px;
-  margin-bottom: 20px;
+  margin:25px 0 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -89,6 +95,15 @@
   color: $additional-white;
   text-transform: uppercase;
   background-color: $base-blue;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .modal-form__checkbox {
@@ -102,12 +117,22 @@
   display: flex;
   align-items: center;
   padding-left: 26px;
+
+  &:hover .modal-form__checkbox-mark {
+    border-color: $base-blue;
+  }
+
+  &:active .modal-form__checkbox-mark,
+  &:focus-visible .modal-form__checkbox-mark {
+    border-color: $base-blue;
+  }
 }
 
 .modal-form__checkbox,
 .modal-form__checkbox-mark,
 .modal-form__checkbox label {
   cursor: pointer;
+  flex-wrap: wrap;
 }
 
 .modal-form__checkbox input {
@@ -144,4 +169,12 @@
   background-color: transparent;
   right: 15px;
   top: 15px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }

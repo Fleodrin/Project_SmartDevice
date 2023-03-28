@@ -14,7 +14,8 @@
   }
 
   @media (max-width: $mobile) {
-    display: none;
+    gap: 15px 30px;
+    padding: 0 25px;
   }
 }
 
@@ -26,10 +27,20 @@
   }
 }
 
-.footer__links-list-link {
+.footer__link-list-item a {
+  display: block;
   text-decoration: none;
   color: $secondary-white;
+  transition: 200ms;
   font-size: 16px;
   line-height: 20px;
   font-family: "PT Mono", monospace;
+
+  &:hover {
+    color: $secondary-blue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }

@@ -15,179 +15,234 @@
 </head>
 <body>
 
-<!--<header class="header">-->
-<!--  <div class="header-container">-->
-<!--    <a href="#">-->
-<!--      <svg class="header__icon" width="55" height="55">-->
-<!--        <use href="img/sprite.svg#logo"></use>-->
-<!--      </svg>-->
-<!--      <div class="header__title-container">-->
-<!--        <h2>Smart Device</h2>-->
-<!--        <span>умные технологии</span>-->
-<!--      </div>-->
-<!--    </a>-->
+<header class="header">
+  <div class="header-container">
+    <a href="#">
+      <svg class="header__icon" width="55" height="55">
+        <use href="img/sprite.svg#logo"></use>
+      </svg>
+      <div class="header__title-container">
+        <h2>Smart Device</h2>
+        <span>умные технологии</span>
+      </div>
+    </a>
 
-<!--    <nav class="nav">-->
-<!--      <ul class="nav__list nav-list">-->
-<!--        <li class="nav-list__item">-->
-<!--          <a href="mailto:info@sd.ru">-->
-<!--            <svg class="nav-list__icon" width="20" height="20">-->
-<!--              <use href="img/sprite.svg#email"></use>-->
-<!--            </svg>-->
-<!--            <span>info@sd.ru</span>-->
-<!--          </a>-->
-<!--        </li>-->
-<!--        <li class="nav-list__item">-->
-<!--          <a href="tel:+74950005252">-->
-<!--            <svg class="nav-list__icon" width="20" height="20">-->
-<!--              <use href="img/sprite.svg#phone-call"></use>-->
-<!--            </svg>-->
-<!--            <span>+7 (495) 000 52 52</span>-->
-<!--          </a>-->
-<!--        </li>-->
-<!--      </ul>-->
+    <nav class="nav">
+      <ul class="nav__list nav-list">
+        <li class="nav-list__item">
+          <a href="mailto:info@sd.ru">
+            <svg class="nav-list__icon" width="20" height="20">
+              <use href="img/sprite.svg#email"></use>
+            </svg>
+            <span>info@sd.ru</span>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="tel:+74950005252">
+            <svg class="nav-list__icon" width="20" height="20">
+              <use href="img/sprite.svg#phone-call"></use>
+            </svg>
+            <span>+7 (495) 000 52 52</span>
+          </a>
+        </li>
+      </ul>
 
-<!--      <button class="nav-button" type="button" data-open-modal="modal">Заказать звонок</button>-->
-<!--    </nav>-->
-<!--  </div>-->
-<!--</header>-->
+      <button class="nav-button" type="button" data-open-modal="modal">Заказать звонок</button>
+    </nav>
+  </div>
+</header>
 
-<!--<main>-->
-<!--  <section class="main">-->
-<!--    <div class="main-container">-->
-<!--      <h1 class="main__title">Печатные платы</h1>-->
-<!--      <h2 class="main__subtitle">производство и монтаж, поставка комплектующих, блоков и модулей</h2>-->
-<!--      <a class="main__link button" href="#feedback">-->
-<!--        <span class="visually-hidden">Получить бесплатную консультацию</span>-->
-<!--      </a>-->
-<!--    </div>-->
-<!--  </section>-->
+<main>
+  <section class="main">
+    <picture>
+      <source media="(max-width: 767px)" srcset="img/main/main-background-mobile.jpg">
+      <source media="(max-width: 1023px)" srcset="img/main/main-background-tablet.jpg">
+      <img class="main__background" width="1920" height="880" src="img/main/main-background.jpg"
+           alt="Фон с материнской платой">
+    </picture>
+    <div class="main-container">
+      <h1>Печатные платы</h1>
+      <h2>производство и монтаж, поставка комплектующих, блоков и модулей</h2>
+      <a href="#feedback">
+        <span class="visually-hidden">Получить бесплатную консультацию</span>
+      </a>
+    </div>
+  </section>
 
-<!--  <section class="advantages">-->
-<!--    <h2 class="visually-hidden">Преймущества</h2>-->
-<!--    <ul class="advantages__list advantages-list">-->
-<!--      <li class="advantages-list__item">-->
-<!--        <svg class="advantages-list__item-icon advantages-list__item-icon&#45;&#45;stopwatch" width="35" height="35">-->
-<!--          <use href="img/sprite.svg#stopwatch"></use>-->
-<!--        </svg>-->
-<!--        <h3>Оперативные сроки</h3>-->
-<!--        <p>Усовершенствованная логистическая система позволяет нам-->
-<!--          просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>-->
-<!--      </li>-->
+  <section class="advantages">
+    <h2 class="visually-hidden">Преймущества</h2>
+    <ul class="advantages__list advantages-list">
+      <li class="advantages-list__item">
+        <svg class="advantages-list__item-icon advantages-list__item-icon--stopwatch" width="35" height="35">
+          <use href="img/sprite.svg#stopwatch"></use>
+        </svg>
+        <h3>Оперативные сроки</h3>
+        <p>Усовершенствованная логистическая система позволяет нам
+          просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+      </li>
 
-<!--      <li class="advantages-list__item">-->
-<!--        <svg class="advantages-list__item-icon advantages-list__item-icon&#45;&#45;hired" width="35" height="35">-->
-<!--          <use href="img/sprite.svg#hired"></use>-->
-<!--        </svg>-->
-<!--        <h3 class="advantages-list__item-title">Крупные поставщики</h3>-->
-<!--        <p class="advantages-list__item-description">Нашими поставщиками являются такие крупные мировые компании как:-->
-<!--          OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей-->
-<!--          продукции.</p>-->
-<!--      </li>-->
+      <li class="advantages-list__item">
+        <svg class="advantages-list__item-icon advantages-list__item-icon--hired" width="35" height="35">
+          <use href="img/sprite.svg#hired"></use>
+        </svg>
+        <h3>Крупные поставщики</h3>
+        <p>Нашими поставщиками являются такие крупные мировые компании как:
+          OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей
+          продукции.</p>
+      </li>
 
-<!--      <li class="advantages-list__item">-->
-<!--        <svg class="advantages-list__item-icon advantages-list__item-icon&#45;&#45;detective" width="35" height="35">-->
-<!--          <use href="img/sprite.svg#detective "></use>-->
-<!--        </svg>-->
-<!--        <h3 class="advantages-list__item-title">Полная конфиденциальность</h3>-->
-<!--        <p class="advantages-list__item-description">По желанию клиента мы обеспечиваем полную конфиденциальность.</p>-->
-<!--      </li>-->
+      <li class="advantages-list__item">
+        <svg class="advantages-list__item-icon advantages-list__item-icon--detective" width="35" height="35">
+          <use href="img/sprite.svg#detective "></use>
+        </svg>
+        <h3>Полная конфиденциальность</h3>
+        <p>По желанию клиента мы обеспечиваем полную конфиденциальность.</p>
+      </li>
 
-<!--      <li class="advantages-list__item">-->
-<!--        <svg class="advantages-list__item-icon advantages-list__item-icon&#45;&#45;tag" width="35" height="35">-->
-<!--          <use href="img/sprite.svg#tag"></use>-->
-<!--        </svg>-->
-<!--        <h3 class="advantages-list__item-title">Персонализация стоимости</h3>-->
-<!--        <p class="advantages-list__item-description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы-->
-<!--          установить ту цену, которая Вас устраивает.</p>-->
-<!--      </li>-->
-<!--    </ul>-->
-<!--  </section>-->
+      <li class="advantages-list__item">
+        <svg class="advantages-list__item-icon advantages-list__item-icon--tag" width="35" height="35">
+          <use href="img/sprite.svg#tag"></use>
+        </svg>
+        <h3>Персонализация стоимости</h3>
+        <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
+          установить ту цену, которая Вас устраивает.</p>
+      </li>
+    </ul>
+  </section>
 
-<!--  <section class="about">-->
-<!--    <div class="about-container">-->
-<!--      <h2 class="about-title">О компании</h2>-->
-<!--      <div class="about-description-container">-->
-<!--        <p class="about-description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем-->
-<!--          мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.-->
-<!--        </p>-->
-<!--        <p class="about-description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,-->
-<!--          HOLGLITRONIC, REFOND. <span class="about-description__mobile">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских-->
-<!--          Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие-->
-<!--          Производители светотехники России.</span>-->
-<!--        </p>-->
-<!--      </div>-->
-<!--      <button class="button about-button">Подробнее</button>-->
-<!--    </div>-->
-<!--  </section>-->
+  <section class="about" data-accordion="parent">
+    <div class="about-container" data-accordion="element">
+      <picture>
+        <img class="about__background" width="150" height="320" src="img/2022.png" alt="2022">
+      </picture>
+      <h2>О компании</h2>
+      <div class="about-description-container">
+        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
+          мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+        </p>
+        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
+          HOLGLITRONIC, REFOND. <span class="about-description__mobile">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
+          Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
+          Производители светотехники России.</span>
+        </p>
+        <div class="about__accordion-container" data-accordion="content">
+          <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
+            продолжают сотрудничество по сей день.
+            На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
+          </p>
+          <p>
+            Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
+            Использование инновационных технологий
+            помогает экономить деньги и время наших клиентов
+          </p>
+        </div>
+      </div>
+      <button class="button about-button" data-accordion="button" data-about="button">Подробнее</button>
+    </div>
+  </section>
 
-<!--  <section class="products">-->
-<!--    <div class="products-container">-->
-<!--      <h2 class="products__title">Smart Device предлагает следующие товары и услуги</h2>-->
-<!--      <h2 class="products__title-mobile">Товары и услуги Smart Device</h2>-->
-<!--      <ul class="products__list products-list">-->
-<!--        <li class="products-list__item products-list__item&#45;&#45;first">-->
-<!--          <h3 class="products-list__item-title">Производство печатных плат</h3>-->
-<!--          <button class="products-list__item-button button" type="button">-->
-<!--            <span class="visually-hidden">Подробнее</span>-->
-<!--            <svg class="products-list__item-icon" width="8" height="8">-->
-<!--              <use href="img/sprite.svg#arrow"></use>-->
-<!--            </svg>-->
-<!--          </button>-->
-<!--        </li>-->
+  <section class="products">
+    <div class="products-container">
+      <h2>Smart Device предлагает следующие товары и услуги</h2>
+      <h2 class="products__title-mobile">Товары и услуги Smart Device</h2>
+      <ul class="products__list products-list">
+        <li class="products-list__item products-list__item--first">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/products/product-mobile-1.jpg">
+              <source media="(max-width: 1023px)" srcset="img/products/product-tablet-1.jpg">
+              <img class="products-list__item-background" width="350" height="650" src="img/products/product-desktop-1.jpg"
+                   alt="Фон продукта">
+            </picture>
+            <h3>Производство печатных плат</h3>
+            <button class="products-list__item-button button" type="button">
+              <span class="visually-hidden">Подробнее</span>
+              <svg class="products-list__item-icon" width="8" height="8">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </a>
+        </li>
 
-<!--        <li class="products-list__item products-list__item&#45;&#45;second">-->
-<!--          <h3 class="products-list__item-title">Монтаж печатных<br>плат</h3>-->
-<!--          <button class="products-list__item-button button" type="button">-->
-<!--            <span class="visually-hidden">Подробнее</span>-->
-<!--            <svg class="products-list__item-icon" width="8" height="8">-->
-<!--              <use href="img/sprite.svg#arrow"></use>-->
-<!--            </svg>-->
-<!--          </button>-->
-<!--        </li>-->
+        <li class="products-list__item products-list__item--second">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/products/product-mobile-2.jpg">
+              <source media="(max-width: 1023px)" srcset="img/products/product-tablet-2.jpg">
+              <img class="products-list__item-background" width="350" height="650" src="img/products/product-desktop-2.jpg"
+                   alt="Фон продукта">
+            </picture>
+            <h3>Монтаж печатных<br>плат</h3>
+            <button class="products-list__item-button button" type="button">
+              <span class="visually-hidden">Подробнее</span>
+              <svg class="products-list__item-icon" width="8" height="8">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </a>
+        </li>
 
-<!--        <li class="products-list__item products-list__item&#45;&#45;third">-->
-<!--          <h3 class="products-list__item-title">Комплектующие для светотехники</h3>-->
-<!--          <button class="products-list__item-button button" type="button">-->
-<!--            <span class="visually-hidden">Подробнее</span>-->
-<!--            <svg class="products-list__item-icon" width="8" height="8">-->
-<!--              <use href="img/sprite.svg#arrow"></use>-->
-<!--            </svg>-->
-<!--          </button>-->
-<!--        </li>-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--  </section>-->
+        <li class="products-list__item products-list__item--third">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/products/product-mobile-3.jpg">
+              <source media="(max-width: 1023px)" srcset="img/products/product-tablet-3.jpg">
+              <img class="products-list__item-background" width="350" height="650" src="img/products/product-desktop-3.jpg"
+                   alt="Фон продукта">
+            </picture>
+            <h3>Комплектующие для светотехники</h3>
+            <button class="products-list__item-button button" type="button">
+              <span class="visually-hidden">Подробнее</span>
+              <svg class="products-list__item-icon" width="8" height="8">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-<!--  <section class="feedback" id="feedback">-->
-<!--    <div class="feedback-container">-->
-<!--      <img class="feedback__picture" src="img/paper-plane.png" alt="paper plane" width="510" height="285">-->
-<!--      <div class="feedback__content-container">-->
-<!--        <h2>Остались вопросы? Задайте их нам!</h2>-->
-<!--        <p>Мы проконсультируем Вас бесплатно</p>-->
-<!--        <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">-->
-<!--          <div class="form__field">-->
-<!--            <input type="text" placeholder="Имя" aria-label="Имя" name="name" required>-->
-<!--          </div>-->
-<!--          <div class="form__field">-->
-<!--            <input type="tel" placeholder="Телефон" aria-label="Телефон" name="tel" required>-->
-<!--          </div>-->
-<!--          <div class="form__textarea">-->
-<!--            <textarea placeholder="Ваш вопрос" name="question" aria-label="Ваш вопрос"></textarea>-->
-<!--          </div>-->
-<!--          <button class="form__button button" type="submit">Задать вопрос</button>-->
-<!--          <div class="form__checkbox">-->
-<!--            <label>-->
-<!--              <input type="checkbox" name="approval" required>-->
-<!--              <span class="form__checkbox-mark"></span>-->
-<!--              Я согласен на обработку персональных данных-->
-<!--            </label>-->
-<!--          </div>-->
-<!--        </form>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-<!--</main>-->
+    <section class="feedback" id="feedback">
+      <div class="feedback-container">
+        <picture>
+          <img class="feedback__picture" src="img/paper-plane.png" alt="paper plane" width="510" height="285">
+        </picture>
+
+        <div class="feedback__content-container"  data-form-validate="" data-callback="base">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
+            <div class="form__field" data-validate-type="text" data-on-input-validate
+                 data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
+                 data-required>
+              <input type="text" placeholder="Имя" aria-label="Имя" name="name" required>
+            </div>
+
+            <div class="form__field" data-validate-type="phone" data-on-input-validate
+                 data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
+                 data-required>
+              <input type="tel" placeholder="Телефон" aria-label="Телефон" name="tel" required>
+            </div>
+
+            <div class="form__textarea">
+              <textarea placeholder="Ваш вопрос" name="question" aria-label="Ваш вопрос"></textarea>
+            </div>
+
+            <button class="form__button button" type="submit">Задать вопрос</button>
+
+            <div class="form__checkbox"  data-validate-type="checkbox" data-message-base="Чекните тут">
+              <label>
+                <input type="checkbox" name="approval" required>
+                <span class="form__checkbox-mark"></span>
+                Я согласен на обработку персональных данных
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+</main>
 
 <footer class="footer">
   <div class="footer-container" data-accordion="parent" data-destroy="(max-width: 767px)" data-single="">
@@ -285,14 +340,14 @@
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="modal-window__form modal-form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
       <div class="modal-form__field" data-validate-type="text" data-on-input-validate
-            data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
-            data-required>
+           data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
+           data-required>
         <input type="text" placeholder="Имя" aria-label="Имя" name="name" required>
       </div>
 
       <div class="modal-form__field" data-validate-type="phone" data-on-input-validate
-            data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
-            data-required>
+           data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
+           data-required>
         <input type="tel" placeholder="Телефон" aria-label="Телефон" name="tel" required>
       </div>
 
@@ -301,6 +356,7 @@
       </div>
 
       <button class="modal-form__button button" type="submit">Отправить</button>
+
       <div class="modal-form__checkbox" data-validate-type="checkbox" data-message-base="Чекните тут">
         <label>
           <input type="checkbox" name="approval" required>

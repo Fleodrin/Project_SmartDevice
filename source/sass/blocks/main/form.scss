@@ -2,6 +2,7 @@
 
 .form {
   display: flex;
+  font-family: "PT Mono", monospace;
   flex-wrap: wrap;
   gap: 20px 30px;
   padding-left: 5px;
@@ -19,7 +20,6 @@
 
 .form__field input,
 .form__textarea textarea {
-  font-family: "PT Mono", monospace;
   font-size: 16px;
   box-sizing: border-box;
   display: block;
@@ -32,6 +32,11 @@
   &::placeholder {
     color: $additional-white;
     opacity: 1;
+  }
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0 0 0 2px $base-blue;
   }
 }
 
@@ -92,6 +97,15 @@
     display: block;
     margin: 0 auto 25px;
   }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .form__checkbox {
@@ -112,12 +126,26 @@
   @media (max-width: $mobile) {
     margin: 0 auto 25px;
   }
+
+  &:hover .form__checkbox-mark,
+  &:focus-visible .form__checkbox-mark {
+    border-color: $base-blue;
+  }
+
+  &:active .form__checkbox-mark {
+    border-color: $base-blue;
+    opacity: 0.7;
+  }
 }
 
 .form__checkbox,
 .form__checkbox-mark,
 .form__checkbox label {
   cursor: pointer;
+}
+
+.form__checkbox label {
+  display: block;
 }
 
 .form__checkbox input {

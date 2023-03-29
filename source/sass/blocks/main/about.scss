@@ -10,31 +10,38 @@
 }
 
 .about-container {
+  position: relative;
   box-sizing: border-box;
-  padding: 5px 0 20px 250px;
+  padding: 5px 30px 20px 250px;
   min-height: 320px;
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
-  background-image: url("../img/2022.png");
-  background-repeat: no-repeat;
-  background-position: left;
 
   @media (max-width: $tablet) {
     width: 670px;
     min-height: 380px;
     padding: 0 0 0 175px;
-    background-position: top left;
   }
 
   @media (max-width: $mobile) {
-    width: 320px;
+    max-width: 480px;
+    width: 100%;
     min-height: 305px;
     padding: 0 25px 0;
-    background: none;
   }
 }
 
-.about-title {
+.about__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.about h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: $base-blue;
   font-size: 36px;
@@ -53,9 +60,27 @@
 .about-description-container {
   min-height: 170px;
   margin-bottom: 20px;
+
+  @media (max-width: $mobile) {
+    min-height: auto;
+  }
 }
 
-.about-description {
+.about__accordion-container {
+  @media (max-width: $mobile) {
+    &::before {
+      display: block;
+      font-family: "PT Mono", monospace;
+      content: "Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.";
+      font-size: 14px;
+      line-height: 19px;
+      color: $base-blue;
+      margin: 0 0 10px;
+    }
+  }
+}
+
+.about p {
   font-family: "PT Mono", monospace;
   font-size: 16px;
   line-height: 120%;
@@ -76,6 +101,7 @@
 }
 
 .about-button {
+  display: block;
   width: 180px;
   height: 45px;
   padding: 14px 12px;
@@ -91,5 +117,16 @@
     width: 160px;
     height: 35px;
     padding: 8px 15px;
+    margin: 0 auto;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $secondary-blue;
+    color: $background-white;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }

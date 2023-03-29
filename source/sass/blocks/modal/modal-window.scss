@@ -96,12 +96,12 @@
   text-transform: uppercase;
   background-color: $base-blue;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     opacity: 0.7;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     opacity: 0.5;
   }
 }
@@ -118,13 +118,14 @@
   align-items: center;
   padding-left: 26px;
 
-  &:hover .modal-form__checkbox-mark {
+  &:hover .modal-form__checkbox-mark,
+  &:focus-visible .modal-form__checkbox-mark {
     border-color: $base-blue;
   }
 
-  &:active .modal-form__checkbox-mark,
-  &:focus-visible .modal-form__checkbox-mark {
+  &:active .modal-form__checkbox-mark {
     border-color: $base-blue;
+    opacity: 0.7;
   }
 }
 

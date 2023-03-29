@@ -74,13 +74,13 @@
       content: "";
       width: 15px;
       height: 15px;
-      background-image: url("../img/cross.svg");
+      background-image: url("../img/footer/cross.svg");
       background-repeat: no-repeat;
     }
 
     &.is-active {
       &::after {
-        background-image: url("../img/minus.svg");
+        background-image: url("../img/footer/minus.svg");
       }
     }
 
@@ -167,7 +167,7 @@
   margin-left: auto;
 
   @media (max-width: $tablet) {
-    margin-right: 128px;
+    margin: 0 128px 0 0;
   }
 
   @media (max-width: $mobile) {

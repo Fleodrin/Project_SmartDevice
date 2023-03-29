@@ -1,14 +1,18 @@
 @import "../../global/variables";
 
+.advantages {
+  background-color: $background-white;
+}
+
 .advantages-list {
+  max-width: 1220px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin: 0;
+  margin: 0 auto;
   padding: 120px 0 120px;
-  background-color: $background-white;
 
   @media (max-width: $tablet) {
     display: grid;
@@ -33,6 +37,7 @@
   border: 1px solid $border-white;
   border-left: none;
   box-shadow: inset 5px 0 $secondary-blue;
+  cursor: default;
 
   &:hover {
     background-color: $secondary-blue;

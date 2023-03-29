@@ -17,9 +17,19 @@
   }
 }
 
-.footer__social-list-link {
+.footer__social-list a {
   display: block;
   padding: 5px;
+  outline: none;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .footer__social-list-logo {

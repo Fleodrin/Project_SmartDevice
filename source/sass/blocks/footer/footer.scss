@@ -158,6 +158,7 @@
 
   @media (max-width: $mobile) {
     width: 100%;
+    max-width: none;
     border-bottom: 1px solid $footer-lines;
   }
 }

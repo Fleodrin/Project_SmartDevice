@@ -3084,6 +3084,7 @@ button.swiper-pagination-bullet {
 
   .footer-container-contacts {
     width: 100%;
+    max-width: none;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 

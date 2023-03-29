@@ -31,12 +31,12 @@
   display: block;
   text-decoration: none;
   color: $secondary-white;
-  transition: 200ms;
   font-size: 16px;
   line-height: 20px;
   font-family: "PT Mono", monospace;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $secondary-blue;
   }
 

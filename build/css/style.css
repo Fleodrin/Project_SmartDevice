@@ -1132,6 +1132,7 @@ button {
 }
 
 .modal-window__content {
+  font-family: "PT Mono", monospace;
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

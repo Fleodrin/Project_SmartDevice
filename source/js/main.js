@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {statusOfAboutButton} from './modules/about-button/about-button';
+import {toggleAboutButtons} from './modules/about-button/about-button';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    statusOfAboutButton();
+    toggleAboutButtons();
   });
 });
 

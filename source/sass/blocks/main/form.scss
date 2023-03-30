@@ -16,6 +16,18 @@
   }
 }
 
+.form__field {
+  max-width: 275px;
+
+  @media (max-width: $tablet) {
+    max-width: 320px;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 450px;
+  }
+}
+
 .form__field input,
 .form__textarea textarea {
   font-size: 16px;
@@ -49,7 +61,7 @@
 
   @media (max-width: $mobile) {
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -58,7 +70,7 @@
   height: 155px;
   resize: none;
   padding: 25px 15px;
-  margin: 0 0 15px;
+  margin: 20px 0 15px;
 
   @media (max-width: $tablet) {
     width: 670px;

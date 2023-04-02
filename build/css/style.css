@@ -698,6 +698,7 @@ button {
 }
 
 .feedback__container {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

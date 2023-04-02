@@ -16,30 +16,30 @@
 <body>
 
 <header class="header">
-  <div class="header-container">
+  <div class="header__container logo container">
     <a href="#">
-      <svg class="header__icon" width="55" height="55">
+      <svg class="header__logo-icon logo__icon" width="55" height="55">
         <use href="img/sprite.svg#logo"></use>
       </svg>
-      <div class="header__title-container">
+      <div class="header__logo-title-container logo__title-container">
         <h2>Smart Device</h2>
         <span>умные технологии</span>
       </div>
     </a>
 
     <nav class="nav">
-      <ul class="nav__list nav-list">
-        <li class="nav-list__item">
+      <ul class="nav__list">
+        <li class="nav__list-item">
           <a href="mailto:info@sd.ru">
-            <svg class="nav-list__icon" width="20" height="20">
+            <svg class="nav__list-icon" width="20" height="20">
               <use href="img/sprite.svg#email"></use>
             </svg>
             <span>info@sd.ru</span>
           </a>
         </li>
-        <li class="nav-list__item">
+        <li class="nav__list-item">
           <a href="tel:+74950005252">
-            <svg class="nav-list__icon" width="20" height="20">
+            <svg class="nav__list-icon" width="20" height="20">
               <use href="img/sprite.svg#phone-call"></use>
             </svg>
             <span>+7 (495) 000 52 52</span>
@@ -47,7 +47,7 @@
         </li>
       </ul>
 
-      <button class="nav-button" type="button" data-open-modal="modal">Заказать звонок</button>
+      <button class="nav__button" type="button" data-open-modal="modal">Заказать звонок</button>
     </nav>
   </div>
 </header>
@@ -63,9 +63,9 @@
       <source media="(max-width: 1023px)" srcset="img/main/main-background-tablet.jpg, img/main/main-background-tablet@2x.jpg 2x">
       <img class="main__background" width="1920" height="880" src="img/main/main-background.jpg"
             srcset="img/main/main-background.jpg, img/main/main-background@2x.jpg 2x"
-            alt="Фон с материнской платой">
+            alt="" aria-hidden="true">
     </picture>
-    <div class="main-container">
+    <div class="main__container container">
       <h1>Печатные платы</h1>
       <h2>производство и монтаж, поставка комплектующих, блоков и модулей</h2>
       <a href="#feedback">
@@ -116,15 +116,15 @@
   </section>
 
   <section class="about" data-accordion="parent">
-    <div class="about-container" data-accordion="element">
+    <div class="about__container container" data-accordion="element">
       <picture>
         <source type="image/webp" srcset="img/about/2022.webp, img/about/2022@2x.webp 2x">
 
         <img class="about__background" width="150" height="320" src="img/about/2022.png"
-              srcset="img/about/2022.png, img/about/2022@2x.png 2x" alt="2022">
+              srcset="img/about/2022.png, img/about/2022@2x.png 2x" alt="" aria-hidden="true">
       </picture>
       <h2>О компании</h2>
-      <div class="about-description-container">
+      <div class="about__description-container">
         <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
           мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
         </p>
@@ -145,12 +145,12 @@
           </p>
         </div>
       </div>
-      <button class="button about-button" data-accordion="button" data-about="button">Подробнее</button>
+      <button class="about__button button" data-accordion="button" data-about="button">Подробнее</button>
     </div>
   </section>
 
   <section class="products">
-    <div class="products-container">
+    <div class="products__container container">
       <h2>Smart Device предлагает следующие товары и услуги</h2>
       <h2 class="products__title-mobile">Товары и услуги Smart Device</h2>
       <ul class="products__list products-list">
@@ -166,15 +166,15 @@
               <img class="products-list__item-background" width="350" height="650"
                     src="img/products/product-desktop-1.jpg"
                     srcset="img/products/product-desktop-1.jpg, img/products/product-desktop-1@2x.jpg 2x"
-                    alt="Фон продукта">
+                    alt="" aria-hidden="true">
             </picture>
             <h3>Производство печатных плат</h3>
-            <button class="products-list__item-button button" type="button">
+            <div class="products-list__item-button">
               <span class="visually-hidden">Подробнее</span>
               <svg class="products-list__item-icon" width="8" height="8">
                 <use href="img/sprite.svg#arrow"></use>
               </svg>
-            </button>
+            </div>
           </a>
         </li>
 
@@ -190,15 +190,15 @@
               <img class="products-list__item-background" width="350" height="650"
                     src="img/products/product-desktop-2.jpg"
                     srcset="img/products/product-desktop-2.jpg, img/products/product-desktop-2@2x.jpg 2x"
-                    alt="Фон продукта">
+                    alt="" aria-hidden="true">
             </picture>
             <h3>Монтаж печатных<br>плат</h3>
-            <button class="products-list__item-button button" type="button">
+            <div class="products-list__item-button">
               <span class="visually-hidden">Подробнее</span>
               <svg class="products-list__item-icon" width="8" height="8">
                 <use href="img/sprite.svg#arrow"></use>
               </svg>
-            </button>
+            </div>
           </a>
         </li>
 
@@ -214,15 +214,15 @@
               <img class="products-list__item-background" width="350" height="650"
                     src="img/products/product-desktop-3.jpg"
                     srcset="img/products/product-desktop-3.jpg, img/products/product-desktop-3@2x.jpg 2x"
-                    alt="Фон продукта">
+                    alt="" aria-hidden="true">
             </picture>
             <h3>Комплектующие для светотехники</h3>
-            <button class="products-list__item-button button" type="button">
+            <div class="products-list__item-button">
               <span class="visually-hidden">Подробнее</span>
               <svg class="products-list__item-icon" width="8" height="8">
                 <use href="img/sprite.svg#arrow"></use>
               </svg>
-            </button>
+            </div>
           </a>
         </li>
       </ul>
@@ -230,34 +230,34 @@
   </section>
 
   <section class="feedback" id="feedback">
-    <div class="feedback-container">
+    <div class="feedback__container container">
       <picture>
         <source type="image/webp" srcset="img/feedback/paper-plane.webp, img/feedback/paper-plane@2x.webp 2x">
 
         <img class="feedback__picture" src="img/feedback/paper-plane.png"
-              srcset="img/feedback/paper-plane.png, img/feedback/paper-plane@2x.png 2x" alt="paper plane" width="510"
-              height="285">
+              srcset="img/feedback/paper-plane.png, img/feedback/paper-plane@2x.png 2x" alt="" width="510"
+              height="285" aria-hidden="true">
       </picture>
 
       <div class="feedback__content-container" data-form-validate="" data-callback="base">
         <h2>Остались вопросы? Задайте их нам!</h2>
         <p>Мы проконсультируем Вас бесплатно</p>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
-          <div class="form__field" data-validate-type="text" data-on-input-validate
+          <div class="form__field field" data-validate-type="text" data-on-input-validate
                 data-message-base="Поле обязательно к заполнению"
                 data-message-extra="Проверьте корректность заполнения поля"
                 data-required>
             <input type="text" placeholder="Имя" aria-label="Имя" name="name" required>
           </div>
 
-          <div class="form__field" data-validate-type="phone" data-on-input-validate
+          <div class="form__field field" data-validate-type="phone" data-on-input-validate
                 data-message-base="Поле обязательно к заполнению"
                 data-message-extra="Проверьте корректность заполнения поля"
                 data-required>
             <input type="tel" placeholder="Телефон" aria-label="Телефон" name="tel" required>
           </div>
 
-          <div class="form__textarea">
+          <div class="form__textarea field">
             <textarea placeholder="Ваш вопрос" name="question" aria-label="Ваш вопрос"></textarea>
           </div>
 
@@ -277,14 +277,14 @@
 </main>
 
 <footer class="footer">
-  <div class="footer-container" data-accordion="parent" data-destroy="(max-width: 767px)" data-single="">
-    <div class="footer-container-social">
+  <div class="footer__container container" data-accordion="parent" data-destroy="(max-width: 767px)" data-single="">
+    <div class="footer__container-social logo">
       <h2 class="visually-hidden">Социальные сети</h2>
       <a href="#">
-        <svg class="footer__logo-icon" width="55" height="55">
+        <svg class="footer__logo-icon logo__icon" width="55" height="55">
           <use href="img/sprite.svg#logo"></use>
         </svg>
-        <div class="footer__logo-title-container">
+        <div class="footer__logo-title-container logo__title-container">
           <h2>Smart Device</h2>
           <span>умные технологии</span>
         </div>
@@ -320,7 +320,7 @@
       </ul>
     </div>
 
-    <div class="footer-container-links footer-section" data-accordion="element">
+    <div class="footer-container-links footer__section" data-accordion="element">
       <h2 data-accordion="button">Разделы сайта</h2>
       <ul class="footer-section__list footer__links-list" data-accordion="content">
         <li class="footer__link-list-item">
@@ -353,7 +353,7 @@
       </ul>
     </div>
 
-    <div class="footer-container-contacts footer-section" data-accordion="element">
+    <div class="footer-container-contacts footer__section" data-accordion="element">
       <h2 data-accordion="button">Наш офис</h2>
       <address class="footer-section__list footer__contacts-list" data-accordion="content">
         <p><a href="https://yandex.com/maps/-/CCUSELFg8A">г. Мытищи, Олимпийский проспект, д.10</a></p>
@@ -366,24 +366,24 @@
 </footer>
 
 <div class="modal-window modal" data-modal="modal">
-  <div class="modal-window__overlay" data-close-modal=""></div>
-  <div class="modal-window__content" data-form-validate="" data-callback="base">
+  <div class="modal-window__overlay modal__overlay" data-close-modal=""></div>
+  <div class="modal-window__content modal__content" data-form-validate="" data-callback="base">
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="modal-window__form modal-form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
-      <div class="modal-form__field" data-validate-type="text" data-on-input-validate
+      <div class="modal-form__field field" data-validate-type="text" data-on-input-validate
             data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
             data-required>
         <input type="text" placeholder="Имя" aria-label="Имя" name="name" required>
       </div>
 
-      <div class="modal-form__field" data-validate-type="phone" data-on-input-validate
+      <div class="modal-form__field field" data-validate-type="phone" data-on-input-validate
             data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
             data-required>
         <input type="tel" placeholder="Телефон" aria-label="Телефон" name="tel" required>
       </div>
 
-      <div class="modal-form__textarea">
+      <div class="modal-form__textarea field">
         <textarea placeholder="Ваш вопрос" name="question" aria-label="Ваш вопрос"></textarea>
       </div>
 

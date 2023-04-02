@@ -28,32 +28,8 @@
   }
 }
 
-.form__field input,
-.form__textarea textarea {
-  font-size: 16px;
-  box-sizing: border-box;
-  display: block;
-  border-radius: 3px;
-  border: 0;
-  background-color: rgba(4, 20, 39, 0.15);
-  color: $additional-white;
-  outline: none;
-
-  &::placeholder {
-    color: $additional-white;
-    opacity: 1;
-  }
-
-  &:hover,
-  &:focus-visible {
-    box-shadow: 0 0 0 2px $base-blue;
-  }
-}
-
 .form__field input {
   width: 275px;
-  height: 50px;
-  padding: 15px;
 
   @media (max-width: $tablet) {
     width: 320px;
@@ -67,10 +43,7 @@
 
 .form__textarea textarea {
   width: 580px;
-  height: 155px;
-  resize: none;
-  padding: 25px 15px;
-  margin: 20px 0 15px;
+  margin-bottom: 15px;
 
   @media (max-width: $tablet) {
     width: 670px;

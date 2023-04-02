@@ -1,12 +1,10 @@
-.products-container {
+.products__container {
   box-sizing: border-box;
   max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
   padding: 70px 30px 140px;
 
   @media (max-width: $tablet) {
-    width: 770px;
+    width: 768px;
     padding: 60px 50px 75px;
   }
 

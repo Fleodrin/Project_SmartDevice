@@ -32,13 +32,10 @@
   transform: translate(-50%, -50%);
 }
 
-.main-container {
+.main__container {
   position: relative;
   z-index: 2;
   box-sizing: border-box;
-  max-width: 1220px;
-  width: 100%;
-  margin: auto;
   padding: 305px 125px 280px;
 
   @media (max-width: $tablet) {

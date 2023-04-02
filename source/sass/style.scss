@@ -3,27 +3,21 @@
 @import "global/global";
 @import "global/utils";
 @import "global/variables";
-
+@import "global/container";
 //Blocks
-//Header
-@import "blocks/header/header";
-@import "blocks/header/nav";
-//Main
-@import "blocks/main/main";
-@import "blocks/main/advantages-list";
-@import "blocks/main/about";
-@import "blocks/main/products";
-@import "blocks/main/feedback";
-@import "blocks/main/form";
-//Footer
-@import "blocks/footer/footer";
-@import "blocks/footer/social-list";
-@import "blocks/footer/links-list";
-@import "blocks/footer/contacts-list";
-//Modal
-@import "blocks/modal/modal";
-@import "blocks/modal/modal-window";
-//Vendor
+@import "blocks/logo";
+@import "blocks/field";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/main";
+@import "blocks/advantages-list";
+@import "blocks/about";
+@import "blocks/products";
+@import "blocks/feedback";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-window";
 @import "vendor/normalize";
 @import "vendor/data-accordion";
 @import "vendor/accordion";

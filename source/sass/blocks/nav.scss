@@ -9,7 +9,7 @@
   }
 }
 
-.nav-list {
+.nav__list {
   display: grid;
   gap: 30px;
   margin: 45px 0 0 0;
@@ -24,7 +24,7 @@
   }
 }
 
-.nav-list__item a {
+.nav__list-item a {
   display: flex;
   font-family: "PT Mono", monospace;
   text-decoration: none;
@@ -42,13 +42,13 @@
   }
 }
 
-.nav-list__item span {
+.nav__list-item span {
   @media (max-width: $tablet) {
     display: none;
   }
 }
 
-.nav-list__icon {
+.nav__list-icon {
   margin-right: 15px;
 
   @media (max-width: $tablet) {
@@ -57,7 +57,7 @@
   }
 }
 
-.nav-button {
+.nav__button {
   width: 160px;
   height: 40px;
   padding: 10px 15px;

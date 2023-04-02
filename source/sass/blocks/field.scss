@@ -1,0 +1,33 @@
+.field input,
+.field textarea {
+  font-size: 16px;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 3px;
+  border: 0;
+  background-color: rgba(4, 20, 39, 0.15);
+  color: $additional-white;
+  outline: none;
+
+  &::placeholder {
+    color: $additional-white;
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0 0 0 2px $base-blue;
+  }
+}
+
+.field input {
+  height: 50px;
+  padding: 15px;
+}
+
+.field textarea {
+  height: 155px;
+  resize: none;
+  margin: 20px 0 0;
+  padding: 25px 15px;
+}

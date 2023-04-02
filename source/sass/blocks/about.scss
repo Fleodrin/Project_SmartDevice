@@ -7,13 +7,11 @@
   }
 }
 
-.about-container {
+.about__container {
   position: relative;
   box-sizing: border-box;
   padding: 5px 30px 20px 250px;
   min-height: 320px;
-  max-width: 1220px;
-  margin: 0 auto;
 
   @media (max-width: $tablet) {
     width: 670px;
@@ -55,7 +53,7 @@
   }
 }
 
-.about-description-container {
+.about__description-container {
   min-height: 170px;
   margin-bottom: 20px;
 
@@ -98,7 +96,7 @@
   }
 }
 
-.about-button {
+.about__button {
   display: block;
   width: 180px;
   height: 45px;

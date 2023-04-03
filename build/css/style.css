@@ -1782,7 +1782,7 @@ template {
   }
 
   .feedback__container {
-    min-width: 768px;
+    min-width: auto;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;

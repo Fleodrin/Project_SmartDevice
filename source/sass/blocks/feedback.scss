@@ -36,7 +36,7 @@
   max-width: 1210px;
 
   @media (max-width: $tablet) {
-    min-width: 768px;
+    min-width: auto;
     justify-content: center;
   }
 

@@ -205,6 +205,55 @@ button {
   padding: 25px 15px;
 }
 
+.checkbox {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "PT Mono", monospace;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.checkbox:hover .checkbox__mark,
+.checkbox:focus-visible .checkbox__mark {
+  border-color: #041827;
+}
+
+.checkbox:active .checkbox__mark {
+  border-color: #041827;
+  opacity: 0.7;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox__mark {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid #ffffff;
+  left: 0;
+  top: 50%;
+  bottom: 50%;
+  margin: auto;
+}
+
+.checkbox input:checked ~ .checkbox__mark::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 7px;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -217,6 +266,7 @@ button {
 }
 
 .header__container {
+  width: auto;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   display: -webkit-box;
@@ -417,7 +467,7 @@ button {
   background-color: rgb(248, 253, 255);
 }
 
-.advantages-list {
+.advantages__list {
   max-width: 1220px;
   list-style-type: none;
   display: -webkit-box;
@@ -433,7 +483,7 @@ button {
   padding: 120px 0 120px;
 }
 
-.advantages-list__item {
+.advantages__list-item {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -447,39 +497,39 @@ button {
   cursor: default;
 }
 
-.advantages-list__item:hover {
+.advantages__list-item:hover {
   background-color: #00b2ff;
   border-color: #00b2ff;
 }
 
-.advantages-list__item-icon {
+.advantages__list-item-icon {
   fill: #00b2ff;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.advantages-list__item-icon--stopwatch {
+.advantages__list-item-icon--stopwatch {
   top: 39px;
   left: 45px;
 }
 
-.advantages-list__item-icon--hired {
+.advantages__list-item-icon--hired {
   top: 39px;
   left: 45px;
 }
 
-.advantages-list__item-icon--detective {
+.advantages__list-item-icon--detective {
   top: 39px;
   left: 40px;
 }
 
-.advantages-list__item-icon--tag {
+.advantages__list-item-icon--tag {
   top: 39px;
   left: 45px;
 }
 
-.advantages-list__item h3 {
+.advantages__list-item h3 {
   color: #00b2ff;
   margin: 0 0 15px;
   font-size: 24px;
@@ -488,7 +538,7 @@ button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
-.advantages-list__item p {
+.advantages__list-item p {
   font-family: "PT Mono", monospace;
   font-size: 16px;
   line-height: 21px;
@@ -496,13 +546,13 @@ button {
   margin: 0;
 }
 
-.advantages-list__item--primary .advantages-list__item-description {
+.advantages__list-item--primary .advantages__list-item-description {
   color: #f2f5f6;
 }
 
-.advantages-list__item:hover .advantages-list__item-icon,
-.advantages-list__item:hover h3,
-.advantages-list__item:hover p {
+.advantages__list-item:hover .advantages__list-item-icon,
+.advantages__list-item:hover h3,
+.advantages__list-item:hover p {
   fill: #f2f5f6;
   color: #f2f5f6;
 }
@@ -781,26 +831,10 @@ button {
 }
 
 .form__checkbox {
-  position: relative;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   margin-top: 15px;
   padding-left: 26px;
   width: 260px;
   height: 30px;
-  font-family: "PT Mono", monospace;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.form__checkbox:hover .form__checkbox-mark,
-.form__checkbox:focus-visible .form__checkbox-mark {
-  border-color: #041827;
-}
-
-.form__checkbox:active .form__checkbox-mark {
-  border-color: #041827;
-  opacity: 0.7;
 }
 
 .form__checkbox,
@@ -811,36 +845,6 @@ button {
 
 .form__checkbox label {
   display: block;
-}
-
-.form__checkbox input {
-  display: none;
-}
-
-.form__checkbox-mark {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 2px;
-  border: 1px solid #ffffff;
-  left: 0;
-  top: 50%;
-  bottom: 50%;
-  margin: auto;
-}
-
-.form__checkbox input:checked ~ .form__checkbox-mark::after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 5px;
-  width: 4px;
-  height: 7px;
-  border-bottom: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
 .footer {
@@ -909,7 +913,7 @@ button {
   display: block;
 }
 
-.footer-container-contacts {
+.footer__container-contacts {
   max-width: 345px;
 }
 
@@ -949,7 +953,7 @@ button {
   opacity: 0.7;
 }
 
-.footer-container-links {
+.footer__container-links {
   margin-left: auto;
 }
 
@@ -1125,6 +1129,22 @@ button {
   margin: 0 0 20px;
 }
 
+.modal-window__close-button {
+  position: absolute;
+  padding: 10px;
+  background-color: transparent;
+  right: 15px;
+  top: 15px;
+}
+
+.modal-window__close-button:hover {
+  opacity: 0.7;
+}
+
+.modal-window__close-button:active {
+  opacity: 0.5;
+}
+
 .modal-form__field input {
   width: 420px;
   margin: 20px 0 0;
@@ -1159,14 +1179,8 @@ button {
 }
 
 .modal-form__checkbox {
-  position: relative;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   width: 395px;
   height: 20px;
-  font-family: "PT Mono", monospace;
-  font-size: 14px;
-  line-height: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1176,68 +1190,12 @@ button {
   padding-left: 26px;
 }
 
-.modal-form__checkbox:hover .modal-form__checkbox-mark,
-.modal-form__checkbox:focus-visible .modal-form__checkbox-mark {
-  border-color: #041827;
-}
-
-.modal-form__checkbox:active .modal-form__checkbox-mark {
-  border-color: #041827;
-  opacity: 0.7;
-}
-
 .modal-form__checkbox,
 .modal-form__checkbox-mark,
 .modal-form__checkbox label {
   cursor: pointer;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.modal-form__checkbox input {
-  display: none;
-}
-
-.modal-form__checkbox-mark {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 2px;
-  border: 1px solid #ffffff;
-  left: 0;
-  top: 50%;
-  bottom: 50%;
-  margin: auto;
-}
-
-.modal-form__checkbox input:checked ~ .modal-form__checkbox-mark::after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 5px;
-  width: 4px;
-  height: 7px;
-  border-bottom: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.modal-window__close-button {
-  position: absolute;
-  padding: 10px;
-  background-color: transparent;
-  right: 15px;
-  top: 15px;
-}
-
-.modal-window__close-button:hover {
-  opacity: 0.7;
-}
-
-.modal-window__close-button:active {
-  opacity: 0.5;
 }
 
 /* stylelint-disable */
@@ -1754,7 +1712,7 @@ template {
     margin-left: 45px;
   }
 
-  .advantages-list {
+  .advantages__list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (320px)[2];
@@ -1762,17 +1720,17 @@ template {
     padding: 80px 50px 80px;
   }
 
-  .advantages-list__item {
+  .advantages__list-item {
     width: 320px;
     min-height: 360px;
     padding: 94px 29px 34px 45px;
   }
 
-  .advantages-list__item h3 {
+  .advantages__list-item h3 {
     line-height: 30px;
   }
 
-  .advantages-list__item p {
+  .advantages__list-item p {
     width: 245px;
   }
 
@@ -1903,7 +1861,7 @@ template {
     width: 320px;
   }
 
-  .footer-container-links {
+  .footer__container-links {
     margin: 0 128px 0 0;
   }
 
@@ -1987,7 +1945,7 @@ template {
     width: 210px;
   }
 
-  .advantages-list {
+  .advantages__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2001,28 +1959,28 @@ template {
     padding: 50px 25px;
   }
 
-  .advantages-list__item {
+  .advantages__list-item {
     width: 270px;
     min-height: 340px;
     padding: 79px 29px 34px 30px;
   }
 
-  .advantages-list__item-icon--stopwatch,
-  .advantages-list__item-icon--hired,
-  .advantages-list__item-icon--detective,
-  .advantages-list__item-icon--tag {
+  .advantages__list-item-icon--stopwatch,
+  .advantages__list-item-icon--hired,
+  .advantages__list-item-icon--detective,
+  .advantages__list-item-icon--tag {
     top: 30px;
     left: 30px;
     width: 30px;
     height: 30px;
   }
 
-  .advantages-list__item h3 {
+  .advantages__list-item h3 {
     font-size: 20px;
     line-height: 28px;
   }
 
-  .advantages-list__item p {
+  .advantages__list-item p {
     width: 210px;
     font-size: 14px;
     line-height: 19px;
@@ -2206,7 +2164,7 @@ template {
     background-image: url("../img/footer/minus.svg");
   }
 
-  .footer__section.is-active .footer-section__list {
+  .footer__section.is-active .footer__section-list {
     margin-bottom: 20px;
   }
 
@@ -2238,7 +2196,7 @@ template {
     margin: 0 83px 25px 87px;
   }
 
-  .footer-container-contacts {
+  .footer__container-contacts {
     width: 100%;
     max-width: none;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
@@ -2253,7 +2211,7 @@ template {
     max-width: 220px;
   }
 
-  .footer-container-links {
+  .footer__container-links {
     margin: 0;
     width: 100%;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);

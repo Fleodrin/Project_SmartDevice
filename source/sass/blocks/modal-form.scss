@@ -1,0 +1,47 @@
+.modal-form__field input {
+  width: 420px;
+  margin: 20px 0 0;
+}
+
+.modal-form__textarea textarea {
+  width: 420px;
+}
+
+.modal-form__button {
+  width: 420px;
+  height: 45px;
+  padding: 15px 60px;
+  margin: 25px 0 20px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: $additional-white;
+  text-transform: uppercase;
+  background-color: $base-blue;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.modal-form__checkbox {
+  width: 395px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 26px;
+}
+
+.modal-form__checkbox,
+.modal-form__checkbox-mark,
+.modal-form__checkbox label {
+  cursor: pointer;
+  flex-wrap: wrap;
+}

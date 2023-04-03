@@ -59,7 +59,7 @@
       }
     }
 
-    &.is-active .footer-section__list {
+    &.is-active .footer__section-list {
       margin-bottom: 20px;
     }
   }
@@ -152,7 +152,7 @@
   display: block;
 }
 
-.footer-container-contacts {
+.footer__container-contacts {
   max-width: 345px;
 
   @media (max-width: $mobile) {
@@ -205,7 +205,7 @@
   }
 }
 
-.footer-container-links {
+.footer__container-links {
   margin-left: auto;
 
   @media (max-width: $tablet) {

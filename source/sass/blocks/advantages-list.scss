@@ -2,7 +2,7 @@
   background-color: $background-white;
 }
 
-.advantages-list {
+.advantages__list {
   max-width: 1220px;
   list-style-type: none;
   display: flex;
@@ -26,7 +26,7 @@
   }
 }
 
-.advantages-list__item {
+.advantages__list-item {
   position: relative;
   box-sizing: border-box;
   width: 595px;
@@ -55,7 +55,7 @@
   }
 }
 
-.advantages-list__item-icon {
+.advantages__list-item-icon {
   fill: $secondary-blue;
   position: absolute;
   top: 0;
@@ -94,7 +94,7 @@
   }
 }
 
-.advantages-list__item h3 {
+.advantages__list-item h3 {
   color: $secondary-blue;
   margin: 0 0 15px;
   font-size: 24px;
@@ -112,7 +112,7 @@
   }
 }
 
-.advantages-list__item p {
+.advantages__list-item p {
   font-family: "PT Mono", monospace;
   font-size: 16px;
   line-height: 21px;
@@ -130,13 +130,13 @@
   }
 }
 
-.advantages-list__item--primary .advantages-list__item-description {
+.advantages__list-item--primary .advantages__list-item-description {
   color: $base-white;
 }
 
-.advantages-list__item:hover .advantages-list__item-icon,
-.advantages-list__item:hover h3,
-.advantages-list__item:hover p {
+.advantages__list-item:hover .advantages__list-item-icon,
+.advantages__list-item:hover h3,
+.advantages__list-item:hover p {
   fill: $base-white;
   color: $base-white;
 }

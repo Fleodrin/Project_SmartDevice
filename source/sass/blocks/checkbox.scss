@@ -41,3 +41,7 @@
   border-right: 1px solid $additional-white;
   transform: rotate(45deg);
 }
+
+.checkbox input:focus ~ .checkbox__mark {
+  border-color: $base-blue;
+}

@@ -17,7 +17,7 @@
   width: 420px;
   height: 45px;
   padding: 15px 60px;
-  margin: 25px 0 20px;
+  margin: 25px 0 17px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -50,4 +50,5 @@
 .modal-form__checkbox label {
   cursor: pointer;
   flex-wrap: wrap;
+  margin-left: 4px;
 }

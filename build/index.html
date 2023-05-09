@@ -262,16 +262,15 @@
           <div class="form__textarea field">
             <textarea placeholder="Ваш вопрос" name="question" aria-label="Ваш вопрос"></textarea>
           </div>
-          <div class="form__button-wrapper">
-            <div class="form__checkbox checkbox" data-validate-type="checkbox" data-message-base="Чекните тут">
-              <label>
-                <input class="visually-hidden" type="checkbox" name="approval" required>
-                <span class="form__checkbox-mark checkbox__mark"></span>
-                Я согласен на обработку персональных данных
-              </label>
-            </div>
 
-            <button class="form__button button" type="submit">Задать вопрос</button>
+          <button class="form__button button" type="submit">Задать вопрос</button>
+
+          <div class="form__checkbox checkbox" data-validate-type="checkbox" data-message-base="Чекните тут">
+            <label>
+              <input type="checkbox" name="approval" required>
+              <span class="form__checkbox-mark checkbox__mark"></span>
+              Я согласен на обработку персональных данных
+            </label>
           </div>
         </form>
       </div>
@@ -327,31 +326,31 @@
       <h2 data-accordion="button">Разделы сайта</h2>
       <ul class="footer__section-list footer__links-list" data-accordion="content">
         <li class="footer__link-list-item">
-          <a href="#">О Компании</a>
+          <a href="#" tabindex="1">О Компании</a>
         </li>
 
         <li class="footer__link-list-item footer__link-list-item--additional">
-          <a href="#">Комплектующие</a>
+          <a href="#" tabindex="5">Комплектующие</a>
         </li>
 
         <li class="footer__link-list-item">
-          <a href="#">Продукты</a>
+          <a href="#" tabindex="2">Продукты</a>
         </li>
 
         <li class="footer__link-list-item footer__link-list-item--additional">
-          <a href="#">Доставка</a>
+          <a href="#" tabindex="6">Доставка</a>
         </li>
 
         <li class="footer__link-list-item">
-          <a href="#">Производство печатных плат</a>
+          <a href="#" tabindex="3">Производство печатных плат</a>
         </li>
 
         <li class="footer__link-list-item footer__link-list-item--additional">
-          <a href="#">Контакты</a>
+          <a href="#" tabindex="7">Контакты</a>
         </li>
 
         <li class="footer__link-list-item">
-          <a href="#">Монтаж печатных плат</a>
+          <a href="#" tabindex="4">Монтаж печатных плат</a>
         </li>
       </ul>
     </div>
@@ -390,19 +389,16 @@
         <textarea placeholder="Ваш вопрос" name="question" aria-label="Ваш вопрос"></textarea>
       </div>
 
-      <div class="modal-form__button-wrapper">
-        <div class="modal-form__checkbox checkbox" data-validate-type="checkbox" data-message-base="Чекните тут">
-          <label>
-            <input class="visually-hidden" type="checkbox" name="approval" required>
-            <span class="modal-form__checkbox-mark checkbox__mark"></span>
-            Я согласен на обработку персональных данных
-          </label>
-        </div>
+      <button class="modal-form__button button" type="submit">Отправить</button>
 
-        <button class="modal-form__button button" type="submit">Отправить</button>
+      <div class="modal-form__checkbox checkbox" data-validate-type="checkbox" data-message-base="Чекните тут">
+        <label>
+          <input type="checkbox" name="approval" required>
+          <span class="modal-form__checkbox-mark checkbox__mark"></span>
+          Я согласен на обработку персональных данных
+        </label>
       </div>
     </form>
-
     <button class="modal-window__close-button" type="button" data-close-modal="">
       <svg class="modal-window__icon-close" width="20" height="20">
         <use href="img/sprite.svg#cross"></use>

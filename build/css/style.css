@@ -65,10 +65,10 @@ button {
   border: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   cursor: pointer;
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-user-select: none;
 }
 
 .visually-hidden {

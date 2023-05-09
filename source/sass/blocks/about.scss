@@ -8,9 +8,10 @@
 }
 
 .about__container {
+  margin-top: -1px;
   position: relative;
   box-sizing: border-box;
-  padding: 5px 30px 20px 250px;
+  padding: 6px 30px 20px 250px;
   min-height: 320px;
 
   @media (max-width: $tablet) {

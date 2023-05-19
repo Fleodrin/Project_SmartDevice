@@ -2,7 +2,7 @@
   display: flex;
   font-family: "PT Mono", monospace;
   flex-wrap: wrap;
-  gap: 20px 30px;
+  gap: 0 30px;
   padding-left: 5px;
   color: $additional-white;
   background-color: $secondary-blue;
@@ -43,10 +43,11 @@
 
 .form__textarea textarea {
   width: 580px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 
   @media (max-width: $tablet) {
     width: 670px;
+    padding: 34px 14px;
   }
 
   @media (max-width: $mobile) {
@@ -54,13 +55,14 @@
     min-width: 270px;
     height: 180px;
     margin-bottom: 30px;
+    padding: 25px 14px;
   }
 }
 
 .form__button {
   order: 1;
   width: 265px;
-  height: 45px;
+  height: auto;
   padding: 15px 25px;
   margin-right: 20px;
   margin-bottom: 25px;

@@ -491,11 +491,10 @@ button {
 .advantages__list {
   max-width: 1220px;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -508,7 +507,7 @@ button {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 595px;
+  max-width: 595px;
   min-height: 300px;
   padding: 94px 44px 34px 45px;
   border: 1px solid #ebebeb;
@@ -588,7 +587,7 @@ button {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 6px 30px 20px 250px;
+  padding: 6px 0 20px 250px;
   min-height: 320px;
 }
 
@@ -616,7 +615,7 @@ button {
 .about p {
   font-family: "PT Mono", monospace;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 135%;
   color: #041827;
   margin: 0 0 20px;
 }
@@ -808,7 +807,7 @@ button {
   font-family: "PT Mono", monospace;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 20px 30px;
+  gap: 0 30px;
   padding-left: 5px;
   color: #ffffff;
   background-color: #00b2ff;
@@ -824,7 +823,7 @@ button {
 
 .form__textarea textarea {
   width: 580px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 .form__button {
@@ -832,7 +831,7 @@ button {
   -ms-flex-order: 1;
   order: 1;
   width: 265px;
-  height: 45px;
+  height: auto;
   padding: 15px 25px;
   margin-right: 20px;
   margin-bottom: 25px;
@@ -919,6 +918,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 350px;
   margin: 0 0 0 16px;
   padding: 0;
   list-style-type: none;
@@ -1783,13 +1785,17 @@ template {
   }
 
   .about {
-    padding-bottom: 80px;
+    padding: 0 50px 80px;
   }
 
   .about__container {
-    width: 670px;
+    max-width: 870px;
     min-height: 380px;
-    padding: 0 0 0 175px;
+    padding: 0 0 0 179px;
+  }
+
+  .about__description-container {
+    margin-bottom: 0;
   }
 
   .products__container {
@@ -1862,6 +1868,7 @@ template {
 
   .form__textarea textarea {
     width: 670px;
+    padding: 34px 14px;
   }
 
   .form__button {
@@ -2034,6 +2041,10 @@ template {
     line-height: 19px;
   }
 
+  .about {
+    padding: 0 0 80px;
+  }
+
   .about__container {
     max-width: 480px;
     width: 100%;
@@ -2068,7 +2079,7 @@ template {
   .about p {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
   }
 
   .about__description-mobile {
@@ -2079,7 +2090,6 @@ template {
     width: 160px;
     height: 35px;
     padding: 8px 15px;
-    margin: 0 auto;
   }
 
   .products__container {
@@ -2140,14 +2150,14 @@ template {
 
   .feedback__content-container h2 {
     font-size: 30px;
-    line-height: 35px;
-    margin-bottom: 20px;
+    line-height: 40px;
+    margin-bottom: 10px;
   }
 
   .feedback__content-container p {
     font-size: 14px;
-    line-height: 15px;
-    margin: 0 0 40px;
+    line-height: 18px;
+    margin: 0 0 34px;
   }
 
   .form {
@@ -2168,6 +2178,7 @@ template {
     min-width: 270px;
     height: 180px;
     margin-bottom: 30px;
+    padding: 25px 14px;
   }
 
   .form__button {
@@ -2221,12 +2232,12 @@ template {
   }
 
   .footer__section.is-active .footer__section-list {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   .footer__section h2 {
     margin: 0;
-    padding: 20px 25px;
+    padding: 22px 25px;
     cursor: pointer;
   }
 
@@ -2249,7 +2260,8 @@ template {
   }
 
   .footer__social-list {
-    margin: 0 83px 25px 87px;
+    max-width: 250px;
+    margin: 0 83px 23px 87px;
   }
 
   .footer__container-contacts {
@@ -2260,11 +2272,17 @@ template {
 
   .footer__contacts-list {
     width: 100%;
+    margin-top: -7px;
     padding: 0 25px;
   }
 
   .footer__contacts-list a {
-    max-width: 220px;
+    max-width: 270px;
+    font-size: 14px;
+  }
+
+  .footer__contacts-list-address {
+    padding-bottom: 8px;
   }
 
   .footer__container-links {

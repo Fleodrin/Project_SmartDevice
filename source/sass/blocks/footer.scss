@@ -60,7 +60,7 @@
     }
 
     &.is-active .footer__section-list {
-      margin-bottom: 20px;
+      margin-bottom: 17px;
     }
   }
 }
@@ -77,7 +77,7 @@
 
   @media (max-width: $mobile) {
     margin: 0;
-    padding: 20px 25px;
+    padding: 22px 25px;
     cursor: pointer;
 
     &:hover {
@@ -118,6 +118,8 @@
 
 .footer__social-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 350px;
   margin: 0 0 0 16px;
   padding: 0;
   list-style-type: none;
@@ -129,7 +131,8 @@
   }
 
   @media (max-width: $mobile) {
-    margin: 0 83px 25px 87px;
+    max-width: 250px;
+    margin: 0 83px 23px 87px;
   }
 }
 
@@ -175,6 +178,7 @@
 
   @media (max-width: $mobile) {
     width: 100%;
+    margin-top: -7px;
     padding: 0 25px;
   }
 }
@@ -202,7 +206,14 @@
   }
 
   @media (max-width: $mobile) {
-    max-width: 220px;
+    max-width: 270px;
+    font-size: 14px;
+  }
+}
+
+.footer__contacts-list-address {
+  @media (max-width: $mobile) {
+    padding-bottom: 8px;
   }
 }
 

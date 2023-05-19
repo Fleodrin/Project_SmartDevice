@@ -5,8 +5,8 @@
 .advantages__list {
   max-width: 1220px;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 30px;
   margin: 0 auto;
@@ -29,7 +29,7 @@
 .advantages__list-item {
   position: relative;
   box-sizing: border-box;
-  width: 595px;
+  max-width: 595px;
   min-height: 300px;
   padding: 94px 44px 34px 45px;
   border: 1px solid $border-white;

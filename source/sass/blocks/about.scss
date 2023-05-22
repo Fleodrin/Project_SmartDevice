@@ -108,10 +108,11 @@
 .about__button {
   display: block;
   width: 180px;
-  height: 45px;
+  min-height: 45px;
   padding: 14px 12px;
   font-size: 14px;
   font-weight: 700;
+  line-height: 15px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: $secondary-blue;
@@ -120,7 +121,6 @@
 
   @media (max-width: $mobile) {
     width: 160px;
-    height: 35px;
     padding: 8px 15px;
   }
 

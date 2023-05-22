@@ -378,12 +378,6 @@ button {
   opacity: 0.5;
 }
 
-.main-container {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
 .main {
   position: relative;
   min-height: 880px;
@@ -420,6 +414,9 @@ button {
   z-index: 2;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   padding: 305px 125px 280px;
 }
 
@@ -500,7 +497,7 @@ button {
   justify-content: center;
   gap: 30px;
   margin: 0 auto;
-  padding: 120px 0 120px;
+  padding: 120px 30px 120px;
 }
 
 .advantages__list-item {
@@ -623,10 +620,11 @@ button {
 .about__button {
   display: block;
   width: 180px;
-  height: 45px;
+  min-height: 45px;
   padding: 14px 12px;
   font-size: 14px;
   font-weight: 700;
+  line-height: 15px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #00b2ff;
@@ -668,12 +666,10 @@ button {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px 85px;
 }
 
@@ -1205,13 +1201,13 @@ button {
   -ms-flex-order: 1;
   order: 1;
   width: 420px;
-  height: 45px;
+  min-height: 45px;
   padding: 15px 60px;
   margin: 25px 0 17px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 15px;
   letter-spacing: 0.05em;
   color: #ffffff;
   text-transform: uppercase;
@@ -1738,24 +1734,24 @@ template {
   }
 
   .main {
-    min-height: 640px;
+    min-height: 540px;
   }
 
   .main__container {
     max-width: 767px;
-    padding: 180px 50px 205px;
+    padding: 80px 50px 205px;
   }
 
   .main h1 {
     height: 60px;
     line-height: 75px;
     font-size: 64px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .main h2 {
     max-width: 670px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .main a {
@@ -1765,13 +1761,13 @@ template {
   .advantages__list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (320px)[2];
-    grid-template-columns: repeat(2, 320px);
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
     padding: 80px 50px 80px;
   }
 
   .advantages__list-item {
-    width: 320px;
+    width: 100%;
     min-height: 360px;
     padding: 94px 29px 34px 45px;
   }
@@ -1799,7 +1795,8 @@ template {
   }
 
   .products__container {
-    width: 768px;
+    max-width: 1023px;
+    width: 100%;
     padding: 60px 50px 75px;
   }
 
@@ -1808,6 +1805,9 @@ template {
   }
 
   .products-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1820,7 +1820,7 @@ template {
   }
 
   .products-list__item a {
-    max-width: 100%;
+    max-width: 1023px;
     min-height: 250px;
     padding: 40px 45px 0;
   }
@@ -1962,24 +1962,26 @@ template {
   }
 
   .main {
-    min-height: 560px;
+    min-height: 490px;
   }
 
   .main__container {
     width: 320px;
-    padding: 150px 25px;
+    padding: 80px 25px;
   }
 
   .main h1 {
     font-size: 36px;
     line-height: 42px;
     height: 75px;
+    margin-bottom: 17px;
   }
 
   .main h2 {
     font-size: 14px;
     line-height: 22px;
     min-height: 35px;
+    margin-bottom: 44px;
   }
 
   .main a {
@@ -2015,7 +2017,7 @@ template {
   }
 
   .advantages__list-item {
-    width: 270px;
+    width: 100%;
     min-height: 340px;
     padding: 79px 29px 34px 30px;
   }
@@ -2036,7 +2038,7 @@ template {
   }
 
   .advantages__list-item p {
-    width: 210px;
+    width: 100%;
     font-size: 14px;
     line-height: 19px;
   }
@@ -2088,12 +2090,11 @@ template {
 
   .about__button {
     width: 160px;
-    height: 35px;
     padding: 8px 15px;
   }
 
   .products__container {
-    width: 320px;
+    max-width: 767px;
     padding: 50px 25px 86px;
   }
 
@@ -2113,8 +2114,9 @@ template {
   }
 
   .products-list__item a {
+    max-width: 767px;
+    width: 100%;
     padding: 30px 30px 0;
-    width: 270px;
   }
 
   .products-list__item h3 {
@@ -2295,5 +2297,9 @@ template {
   .footer__links-list {
     gap: 15px 30px;
     padding: 0 25px;
+  }
+
+  .footer__link-list-item a {
+    font-size: 14px;
   }
 }

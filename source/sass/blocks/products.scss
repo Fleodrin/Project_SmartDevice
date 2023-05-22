@@ -4,12 +4,13 @@
   padding: 70px 30px 140px;
 
   @media (max-width: $tablet) {
-    width: 768px;
+    max-width: $tablet;
+    width: 100%;
     padding: 60px 50px 75px;
   }
 
   @media (max-width: $mobile) {
-    width: 320px;
+    max-width: $mobile;
     padding: 50px 25px 86px;
   }
 }

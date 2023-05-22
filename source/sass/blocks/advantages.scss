@@ -10,11 +10,11 @@
   justify-content: center;
   gap: 30px;
   margin: 0 auto;
-  padding: 120px 0 120px;
+  padding: 120px 30px 120px;
 
   @media (max-width: $tablet) {
     display: grid;
-    grid-template-columns: repeat(2, 320px);
+    grid-template-columns: repeat(2, 1fr);
     padding: 80px 50px 80px;
   }
 
@@ -43,13 +43,13 @@
   }
 
   @media (max-width: $tablet) {
-    width: 320px;
+    width: 100%;
     min-height: 360px;
     padding: 94px 29px 34px 45px;
   }
 
   @media (max-width: $mobile) {
-    width: 270px;
+    width: 100%;
     min-height: 340px;
     padding: 79px 29px 34px 30px;
   }
@@ -124,7 +124,7 @@
   }
 
   @media (max-width: $mobile) {
-    width: 210px;
+    width: 100%;
     font-size: 14px;
     line-height: 19px;
   }

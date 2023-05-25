@@ -481,6 +481,12 @@ button {
   color: #f2f5f6;
 }
 
+.main-container {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 .advantages {
   background-color: rgb(248, 253, 255);
 }

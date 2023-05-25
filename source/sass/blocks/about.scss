@@ -122,6 +122,7 @@
   @media (max-width: $mobile) {
     width: 160px;
     padding: 8px 15px;
+    min-height: 35px;
   }
 
   &:hover,

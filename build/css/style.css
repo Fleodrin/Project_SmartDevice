@@ -291,7 +291,7 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 1160px;
-  padding: 0 60px;
+  padding: 0 60px 0 0;
 }
 
 .header__container > a {
@@ -414,9 +414,6 @@ button {
   z-index: 2;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   padding: 305px 125px 280px;
 }
 
@@ -1085,6 +1082,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 610px;
   cursor: pointer;
 }
 
@@ -2097,6 +2095,7 @@ template {
   .about__button {
     width: 160px;
     padding: 8px 15px;
+    min-height: 35px;
   }
 
   .products__container {

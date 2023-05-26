@@ -103,10 +103,10 @@
   box-sizing: border-box;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   border-radius: 3px;
   background-color: $secondary-blue;
   width: 410px;
-  height: 55px;
   padding: 15px 25px;
 
   &:hover,
@@ -121,7 +121,6 @@
 
   &::after {
     content: "Получить бесплатную консультацию";
-    position: absolute;
     display: block;
     top: 16px;
     left: 25px;
@@ -129,7 +128,7 @@
     min-height: 20px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 25px;
     letter-spacing: 0.05em;
     color: $base-white;
   }
@@ -140,7 +139,6 @@
 
   @media (max-width: $mobile) {
     width: 270px;
-    height: 40px;
     padding: 10px 30px;
     margin: 0;
     font-size: 14px;
